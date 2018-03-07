@@ -2104,3 +2104,18 @@ discord.ext.commands.errors.CommandInvokeError: Command raised an exception: Att
 [07/03/2018 20:07] INFO __main__ channel_cleanup 576: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
 [07/03/2018 20:07] INFO __main__ channel_cleanup 662: Channel_Cleanup - SAVING CHANGES
 [07/03/2018 20:07] INFO __main__ channel_cleanup 667: Channel_Cleanup ------ END ------
+[08/03/2018 00:31] INFO __main__ <module> 55: Serverdict Loaded Successfully
+[08/03/2018 00:31] INFO __main__ _print 709: Avvio in corso...
+[08/03/2018 00:31] INFO __main__ _print 709: Calbot operativo!
+
+2 server connesso.
+106 membri.
+[08/03/2018 00:31] INFO __main__ maint_start 716: Maintenance Tasks Started
+[08/03/2018 00:31] INFO __main__ guild_cleanup 675: Server_Cleanup ------ BEGIN ------
+[08/03/2018 00:31] INFO __main__ guild_cleanup 694: Server_Cleanup - SAVING CHANGES
+[08/03/2018 00:31] INFO __main__ guild_cleanup 699: Server_Cleanup ------ END ------
+[08/03/2018 00:31] INFO __main__ channel_cleanup 566: Channel_Cleanup ------ BEGIN ------
+[08/03/2018 00:31] INFO __main__ channel_cleanup 576: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[08/03/2018 00:31] INFO __main__ channel_cleanup 576: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[08/03/2018 00:31] INFO __main__ channel_cleanup 662: Channel_Cleanup - SAVING CHANGES
+[08/03/2018 00:31] INFO __main__ channel_cleanup 667: Channel_Cleanup ------ END ------
