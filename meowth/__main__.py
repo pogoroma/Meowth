@@ -3008,11 +3008,11 @@ async def timerset(ctx, timer):
             timer_split = message.clean_content.lower().split()
             del timer_split[0]
             try:
-                start = dateparser.parse(' '.join(timer_split).lower(), settings={'DATE_ORDER': 'MDY'})
+                start = dateparser.parse(' '.join(timer_split).lower(), settings={'DATE_ORDER': 'DMY'})
             except:
                 if ('am' in ' '.join(timer_split).lower()) or ('pm' in ' '.join(timer_split).lower()):
                     try:
-                        start = datetime.datetime.strptime((' '.join(timer_split) + ' ') + str(now.year), '%m/%d %I:%M %p %Y')
+                        start = datetime.datetime.strptime((' '.join(timer_split) + ' ') + str(now.year), '%d/%m %I:%M %p %Y')
                         if start.month < now.month:
                             start = start.replace(year=now.year + 1)
                     except ValueError:
@@ -3020,7 +3020,7 @@ async def timerset(ctx, timer):
                         return
                 else:
                     try:
-                        start = datetime.datetime.strptime((' '.join(timer_split) + ' ') + str(now.year), '%m/%d %H:%M %Y')
+                        start = datetime.datetime.strptime((' '.join(timer_split) + ' ') + str(now.year), '%d/%m %H:%M %Y')
                         if start.month < now.month:
                             start = start.replace(year=now.year + 1)
                     except ValueError:
