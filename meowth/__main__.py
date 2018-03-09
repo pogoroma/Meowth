@@ -2669,7 +2669,8 @@ async def _eggtoraid(entered_raid, raid_channel, author=None):
     if not reportcitychannel:
         async for message in raid_channel.history(limit=500, reverse=True):
             if message.author.id == guild.me.id:
-                if 'Coordinate here' in message.content:
+                c = _('Coordinate here')
+                if c in message.content:
                     reportcitychannel = message.raw_channel_mentions[0]
                     break
     if reportcitychannel:
@@ -3206,7 +3207,8 @@ async def new(ctx):
         if not report_channel:
             async for m in message.channel.history(limit=500, reverse=True):
                 if m.author.id == guild.me.id:
-                    if 'Coordinate here' in m.content:
+                    c = _('Coordinate here')
+                    if c in message.content:
                         report_channel = m.raw_channel_mentions[0]
                         break
         report_city = report_channel.name
@@ -3269,7 +3271,8 @@ async def recover(ctx):
         }
         async for message in channel.history(limit=500, reverse=True):
             if message.author.id == guild.me.id:
-                if 'Coordinate here' in message.content:
+                    c = _('Coordinate here')
+                    if c in message.content:
                     reportchannel = message.raw_channel_mentions[0]
                     raidmessage = message
                     break
