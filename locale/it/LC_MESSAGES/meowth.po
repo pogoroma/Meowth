@@ -15,6 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
 
+
 #: __main__.py:295
 msgid "Received admin command {command} from unauthorized user, {user}!"
 msgstr "Ho ricevuto un comando amministratore {command} da un utente non autorizzato, {user}!"
@@ -230,20 +231,6 @@ msgstr "Annuncio inviato a {} proprietari server: {} riuscito/i, {} fallito/i"
 #: __main__.py:1147
 msgid "Announcement Timed Out."
 msgstr "Annuncio Scaduto."
-
-#: __main__.py:1156
-msgid ""
-"Meowth Configuration\n"
-"\n"
-"    Usage: !configure\n"
-"    Meowth will DM you instructions on how to configure Meowth for your server.\n"
-"    If it is not your first time configuring, you can choose a section to jump to."
-msgstr ""
-"Configurazione di Calbot\n"
-"\n"
-"    Uso: !configure\n"
-"    Calbot ti invierà istruzioni tramite messaggio diretto per configurarlo su questo server.\n"
-"    Se non è la prima volta che effettui la configurazione potrai scegliere una sezione specifica da configurare."
 
 #: __main__.py:1194
 msgid ""
@@ -664,7 +651,7 @@ msgstr ""
 msgid "Report Locations"
 msgstr "Località segnalazioni"
 
-#: __main__.py:1484
+#: __main__.py:1487
 msgid ""
 "The number of cities doesn't match the number of channels you gave me earlier!\n"
 "\n"
@@ -885,10 +872,15 @@ msgstr ""
 "\n"
 "Con questo:\n"
 
-#: __main__.py:1724
-msgid "\n\nContinue?"
-msgstr "\n\nConfermi?"
-
+#: __main__.py:1727
+msgid ""
+"\n"
+"\n"
+"Continue?"
+msgstr ""
+"\n"
+"\n"
+"Confermi?"
 #: __main__.py:1754
 msgid "The channel you entered is not a raid channel."
 msgstr "Il canale scelto non è un canale raid."
@@ -943,6 +935,16 @@ msgstr "squadre"
 msgid "status"
 msgstr "stati"
 
+#: __main__.py:1785
+#: __main__.py:1786
+msgid "Level {}"
+msgstr "Livello {}"
+
+#: __main__.py:1785
+#: __main__.py:1786
+msgid "level\\s\\d"
+msgstr "livell\\s\\d"
+
 #: __main__.py:1804
 msgid "Are you sure you want to clear all status for this raid? Everybody will have to RSVP again. If you are wanting to clear one user's status, use `!setstatus <user> cancel`"
 msgstr "Sicuro di voler cancellare tutti gli stati per questo raid? Dovranno tutti rispondere di nuovo. Se vuoi cancellare lo stato di un allenatore solo, usa `!setstatus <user> cancel`"
@@ -970,23 +972,23 @@ msgstr ""
 
 #: __main__.py:1873
 msgid "{yr}y {mth}m {day}d {hr}:{min}"
-msgstr ""
+msgstr "{yr}a {mth}m {day}g {hr}:{min}"
 
 #: __main__.py:1875
 msgid "{mth}m {day}d {hr}:{min}"
-msgstr ""
+msgstr "{mth}m {day}g {hr}:{min}"
 
 #: __main__.py:1877
 msgid "{day} days {hr} hrs {min} mins"
-msgstr ""
+msgstr "{day} gg {hr} ore {min} mins"
 
 #: __main__.py:1879
 msgid "{hr} hrs {min} mins {sec} secs"
-msgstr ""
+msgstr "{hr} ore {min} min {sec} sec"
 
 #: __main__.py:1881
 msgid "{min} mins {sec} secs"
-msgstr ""
+msgstr "{min} min {sec} sec"
 
 #: __main__.py:1897
 msgid ""
@@ -1604,67 +1606,68 @@ msgstr "Nessuno mi ha detto quando questo {raidtype} {raidaction}, quindi dò pe
 msgid "This {raidtype} will {raidaction} at {expiry_time}!"
 msgstr "Questo {raidtype} {raidaction} alle {expiry_time}!"
 
-#: __main__.py:2981
+#: __main__.py:2966
 msgid "No one told me when the {raidtype} will {raidaction}, so I'm assuming it will {raidaction} at {expiry_time}!"
 msgstr "Nessuno mi ha detto quando questo {raidtype} {raidaction}, quindi dò per scontato che {raidaction} alle {expiry_time}!"
 
-#: __main__.py:2994
+#: __main__.py:2979
 msgid "Raid Egg"
 msgstr "Uovo raid"
 
-#: __main__.py:2998
+#: __main__.py:2983
 msgid "Raid"
 msgstr "Raid"
 
-#: __main__.py:2998
+#: __main__.py:2996
+#: __main__.py:2999
 msgid "Meowth! I couldn't understand your time format. Try again like this: **!timerset <minutes>**"
 msgstr "Non ho capito che formato hai usato per scrivere l'ora. Prova così: **!timerset <minuti>**"
 
-#: __main__.py:3017
+#: __main__.py:3002
 msgid "Meowth...that's too long. Level {raidlevel} {raidtype}s currently last no more than {maxtime} minutes..."
 msgstr "È... un po' troppo. {raidtype} di livello {raidlevel} attualmente non durano più di {maxtime} minuti..."
 
-#: __main__.py:3034
-#: __main__.py:3042
+#: __main__.py:3019
+#: __main__.py:3027
 msgid "Meowth! Your timer wasn't formatted correctly. Change your **!timerset** to match this format: **MM/DD HH:MM AM/PM** (You can also omit AM/PM and use 24-hour time!)"
 msgstr "Il timer non era formattato correttamente. Il formato corretto è: **!timerset <GG/MM HH:MM>**."
 
-#: __main__.py:3049
-#: __main__.py:3143
+#: __main__.py:3034
+#: __main__.py:3128
 msgid "Meowth! Please enter a time in the future."
 msgstr "Ehi! Dovresti mettere una data/ora futura."
 
-#: __main__.py:3051
+#: __main__.py:3036
 msgid "Meowth! Timerset isn't supported for EX Raids after they have hatched."
 msgstr "Ops! Timerset non è supportato per i Raid EX dopo che l'uovo si è schiuso."
 
-#: __main__.py:3070
+#: __main__.py:3047
 msgid "The channel has been reactivated."
 msgstr "Il canale è stato riattivato."
 
-#: __main__.py:3072
+#: __main__.py:3057
 msgid "%B %d at %I:%M %p (%H:%M) | "
 msgstr "%d/%m alle %H:%M | "
 
-#: __main__.py:3072
+#: __main__.py:3057
 msgid "Hatches on {expiry}"
 msgstr "Schiusa: {expiry}"
 
-#: __main__.py:3073
-#: __main__.py:3075
+#: __main__.py:3058
+#: __main__.py:3060
 msgid "Ends on {end}"
 msgstr "Termine: {end}"
 
-#: __main__.py:3087
+#: __main__.py:3072
 msgid "Meowth!"
 msgstr "​"
 
-#: __main__.py:3126
-#: __main__.py:3132
+#: __main__.py:3111
+#: __main__.py:3117
 msgid "Meowth! Your start time wasn't formatted correctly. Change your **!starttime** to match this format: **HH:MM AM/PM** (You can also omit AM/PM and use 24-hour time!)"
 msgstr "L'orario di avvio non era formattato correttamente. Il formato corretto è **!starttime** **HH:MM**."
 
-#: __main__.py:3140
+#: __main__.py:3125
 msgid "Meowth! The raid will be over before that...."
 msgstr "Ehm, il raid sarà finito per quell'ora..."
 
@@ -1676,21 +1679,21 @@ msgstr ""
 msgid "Meowth! There is already a start time of **{start}** set! Do you want to change it?"
 msgstr "Ehi, è già stato deciso di partire alle **{start}**! Intendi cambiare l'orario?"
 
-#: __main__.py:3154
+#: __main__.py:3139
 msgid "Start time change cancelled."
 msgstr "Cambio dell'orario di inizio annullato."
 
-#: __main__.py:3162
-#: __main__.py:3166
+#: __main__.py:3147
+#: __main__.py:3151
 msgid "Meowth! The current start time has been set to: **{starttime}**"
 msgstr "Ricevuto! Si è deciso di iniziare la battaglia alle **{starttime}**."
 
-#: __main__.py:3173
-#: __main__.py:3177
+#: __main__.py:3158
+#: __main__.py:3162
 msgid "Meowth! No start time has been set, set one with **!starttime HH:MM AM/PM**! (You can also omit AM/PM and use 24-hour time!)"
 msgstr "Ehi, nessun orario di avvio è stato deciso! Impostalo con **!starttime HH:MM**."
 
-#: __main__.py:3175
+#: __main__.py:3160
 msgid "Meowth! The current start time is: **{starttime}**"
 msgstr "L'avvio della sfida è programmato per le **{starttime}**!"
 
@@ -1704,35 +1707,35 @@ msgstr ""
 "Dettagli: {location}\n"
 "Scadenza: {topic}"
 
-#: __main__.py:3217
+#: __main__.py:3202
 msgid "Meowth! We're missing the new location details! Usage: **!location new <new address>**"
 msgstr "Mancano i dettagli sulla nuova posizione! Utilizzo: **!location new <posizione>**"
 
-#: __main__.py:3269
+#: __main__.py:3257
 msgid "Meowth! I can't recover this channel because I know about it already!"
 msgstr "Niente da recuperare qui! Funziona tutto bene!"
 
-#: __main__.py:3275
+#: __main__.py:3263
 msgid "level-[1-5]-egg"
 msgstr "uovo-livello-[1-5]"
 
-#: __main__.py:3320
+#: __main__.py:3309
 msgid "Ends on %B %d at %I:%M %p"
 msgstr "Termina il %d/%m alle %H:%M"
 
-#: __main__.py:3326
+#: __main__.py:3315
 msgid "EX"
 msgstr "EX"
 
-#: __main__.py:3346
+#: __main__.py:3335
 msgid "Meowth! I couldn't recognize this as a raid channel!"
 msgstr "Ops! Non riconosco questo come un canale raid!"
 
-#: __main__.py:3395
+#: __main__.py:3384
 msgid "Meowth! This channel has been recovered! However, there may be some inaccuracies in what I remembered! Here's what I have:"
 msgstr "Questo canale è stato ripristinato! Tuttavia, potrei essermi dimenticato qualcosa! Ecco cosa ho:"
 
-#: __main__.py:3405
+#: __main__.py:3394
 msgid ""
 "\n"
 "I'm not sure when this {raidtype} will {action}, so please use **!timerset** if you can!"
@@ -1740,19 +1743,19 @@ msgstr ""
 "\n"
 "Non so quando questo {raidtype} {action}, quindi usa **!timerset** se puoi!"
 
-#: __main__.py:3432
+#: __main__.py:3421
 msgid "Meowth! You've already made a duplicate report for this raid!"
 msgstr "Ehi! Hai già inviato una segnalazione duplicato per questo raid!"
 
-#: __main__.py:3453
+#: __main__.py:3442
 msgid "Meowth! Are you sure you wish to remove this raid?"
 msgstr "Sei sicuro di voler cancellare questo raid?"
 
-#: __main__.py:3458
+#: __main__.py:3447
 msgid "Duplicate Report cancelled."
 msgstr "Segnalazione duplicato rimossa."
 
-#: __main__.py:3473
+#: __main__.py:3456
 msgid "Duplicate Confirmed"
 msgstr "Duplicato confermato"
 
@@ -1764,12 +1767,8 @@ msgstr "Segnalazione duplicato scaduta."
 msgid "Duplicate report #{duplicate_report_count} received."
 msgstr "Segnalazione duplicato #{duplicate_report_count} ricevuta."
 
+#: __main__.py:3498
 #: __main__.py:3524
-#: __main__.py:3572
-msgid "none"
-msgstr "nessuno"
-
-#: __main__.py:3559
 #: __main__.py:3572
 msgid "clear"
 msgstr "sereno"
@@ -1779,36 +1778,49 @@ msgstr "sereno"
 msgid "extreme"
 msgstr "estremo"
 
+#: __main__.py:3498
+#: __main__.py:3524
+#: __main__.py:3572
+msgid "none"
+msgstr "nessuno"
+
+#: __main__.py:3498
 #: __main__.py:3524
 #: __main__.py:3572
 msgid "rainy"
 msgstr "piovoso"
 
+#: __main__.py:3498
 #: __main__.py:3524
 #: __main__.py:3572
 msgid "sunny"
 msgstr "soleggiato"
 
+#: __main__.py:3499
 #: __main__.py:3525
 #: __main__.py:3573
 msgid "cloudy"
 msgstr "nuvoloso"
 
+#: __main__.py:3499
 #: __main__.py:3525
 #: __main__.py:3573
 msgid "fog"
 msgstr "nebbia"
 
+#: __main__.py:3499
 #: __main__.py:3525
 #: __main__.py:3573
 msgid "partlycloudy"
 msgstr "parz.nuvoloso"
 
+#: __main__.py:3499
 #: __main__.py:3525
 #: __main__.py:3573
 msgid "snow"
 msgstr "neve"
 
+#: __main__.py:3499
 #: __main__.py:3525
 #: __main__.py:3573
 msgid "windy"
@@ -1865,7 +1877,7 @@ msgstr ""
 msgid "Meowth! Enter one of the following weather conditions: {}"
 msgstr "Inserisci una delle seguenti condizioni meteo: {}"
 
-#: __main__.py:3565
+#: __main__.py:3578
 msgid "Meowth! Weather set to {}!"
 msgstr "Meteo impostato: {}!"
 
@@ -1881,28 +1893,28 @@ msgstr "{teamcounts} {bosslist}"
 msgid "{word} doesn't appear in level {egglevel} raids! Please try again."
 msgstr "{word} non appare nei raid di livello {egglevel}! Ricontrolla."
 
-#: __main__.py:3646
+#: __main__.py:3662
 msgid "Meowth! {member} is interested!"
 msgstr "{member} è interessato/a!"
 
-#: __main__.py:3648
+#: __main__.py:3664
 msgid "Meowth! {member} is interested with a total of {trainer_count} trainers! {blue_emoji}: {mystic} | {red_emoji}: {valor} | {yellow_emoji}: {instinct} | :grey_question:: {unknown}"
 msgstr "{trainer_count} allenatori tra cui {member} sono interessati! {blue_emoji}: {mystic} | {red_emoji}: {valor} | {yellow_emoji}: {instinct} | :grey_question:: {unknown}"
 
-#: __main__.py:3699
-#: __main__.py:3802
+#: __main__.py:3715
+#: __main__.py:3821
 msgid "Meowth! Specify which of the possible bosses you are interested in! Otherwise, please wait until the raid egg has hatched before announcing you're coming or present."
 msgstr "Specifica a quale tra i boss possibili sei interessato. In alternativa, aspetta fino alla schiusa dell'uovo prima di annunciare che verrai o se stai già lì."
 
-#: __main__.py:3749
+#: __main__.py:3768
 msgid "Meowth! {member} is on the way!"
 msgstr "{member} si è avviato!"
 
-#: __main__.py:3751
+#: __main__.py:3770
 msgid "Meowth! {member} is on the way with a total of {trainer_count} trainers! {blue_emoji}: {mystic} | {red_emoji}: {valor} | {yellow_emoji}: {instinct} | :grey_question:: {unknown}"
 msgstr "{trainer_count} allenatori tra cui {member} si sono avviati! {blue_emoji}: {mystic} | {red_emoji}: {valor} | {yellow_emoji}: {instinct} | :grey_question:: {unknown}"
 
-#: __main__.py:3839
+#: __main__.py:3858
 msgid ""
 "\n"
 "There is a group already in the lobby! Use **!lobby** to join them or **!backout** to request a backout! Otherwise, you may have to wait for the next group!"
@@ -1910,39 +1922,39 @@ msgstr ""
 "\n"
 "Un gruppo è gia nella lobby! Usa **!lobby** per unirti a loro o **!backout** per chiedere loro di uscire! Altrimenti, dovrai aspettare il prossimo gruppo!"
 
-#: __main__.py:3857
+#: __main__.py:3879
 msgid "Meowth! {member} is at the raid!"
 msgstr "{member} è in posizione al raid!"
 
-#: __main__.py:3860
+#: __main__.py:3882
 msgid "Meowth! {member} is at the raid with a total of {trainer_count} trainers! {blue_emoji}: {mystic} | {red_emoji}: {valor} | {yellow_emoji}: {instinct} | :grey_question:: {unknown}"
 msgstr "{trainer_count} allenatori tra cui {member} sono arrivati! {blue_emoji}: {mystic} | {red_emoji}: {valor} | {yellow_emoji}: {instinct} | :grey_question:: {unknown}"
 
-#: __main__.py:3921
+#: __main__.py:3943
 msgid "Only one non-team count can be accepted."
 msgstr "È ammessa solo una cifra per i non appartenenti a una squadra."
 
-#: __main__.py:3933
+#: __main__.py:3955
 msgid "Only one count per team accepted."
 msgstr "È ammessa solo una cifra per gli appartenenti a una squadra."
 
-#: __main__.py:3937
+#: __main__.py:3959
 msgid "Invalid format, please check and try again."
 msgstr "Formato non valido, ricontrolla e prova di nuovo"
 
-#: __main__.py:3941
+#: __main__.py:3963
 msgid "Team counts are higher than the total, double check your counts and try again. You entered **"
 msgstr "La somma delle singole squadre è superiore al totale, ricontrolla e riprova. Tu hai detto **"
 
-#: __main__.py:3942
+#: __main__.py:3964
 msgid "** total and **"
 msgstr "** totali e **"
 
-#: __main__.py:3943
+#: __main__.py:3965
 msgid "** in your party."
 msgstr "** nella tua squadra."
 
-#: __main__.py:3948
+#: __main__.py:3970
 msgid "Meowth! Something is not adding up! Try making sure your total matches what each team adds up to!"
 msgstr "Ops! Qualcosa non torna! Assicurati che il totale corrisponda alla somma di tutte le squadre."
 
@@ -1967,63 +1979,63 @@ msgstr "**Boss di interesse:**"
 msgid "**Status List**"
 msgstr "**Lista stati**"
 
-#: __main__.py:3999
+#: __main__.py:4046
 msgid "Maybe: **{channelmaybe}** | Coming: **{channelcoming}** | Here: **{channelhere}**"
 msgstr "Forse: **{channelmaybe}** | In arrivo: **{channelcoming}** | Presenti: **{channelhere}**"
 
-#: __main__.py:3999
+#: __main__.py:4047
 msgid "**Team List**"
 msgstr "**Lista squadre**"
 
-#: __main__.py:4034
+#: __main__.py:4082
 msgid "Meowth! I can't understand how many are in your group. Just say **!here** if you're by yourself, or **!coming 5** for example if there are 5 in your group."
 msgstr "Mmm... Non riesco a capire in quanti siete. Scrivi **!interested** se sei da solo/a, o **!interested 5** per esempio se siete in 5."
 
-#: __main__.py:4044
+#: __main__.py:4092
 msgid "Meowth! There is no group in the lobby for you to join! Use **!starting** if the group waiting at the raid is entering the lobby!"
 msgstr "Non c'è nessun gruppo nella lobby al quale unirsi! Usa **!starting** se il gruppo in attesa al raid sta entrando nella lobby!"
 
-#: __main__.py:4048
+#: __main__.py:4096
 msgid "Meowth! {member} is entering the lobby!"
 msgstr "{member} sta entrando nella lobby!"
 
-#: __main__.py:4050
+#: __main__.py:4098
 msgid "Meowth! {member} is entering the lobby with a total of {trainer_count} trainers!"
 msgstr "{trainer_count} allenatori tra cui {member} stanno entrando nella lobby!"
 
-#: __main__.py:4074
+#: __main__.py:4122
 msgid "Meowth! {member} has no status to cancel!"
 msgstr "Ehi! {member} non ha stati da cancellare!"
 
-#: __main__.py:4078
+#: __main__.py:4126
 msgid "Meowth! {member} is no longer interested!"
 msgstr "{member} non è più interessato al raid!"
 
-#: __main__.py:4080
+#: __main__.py:4128
 msgid "Meowth! {member} and their total of {trainer_count} trainers are no longer interested!"
 msgstr "{trainer_count} allenatori tra cui {member} non sono più interessati al raid!"
 
-#: __main__.py:4083
+#: __main__.py:4131
 msgid "Meowth! {member} has left the raid!"
 msgstr "{member} ha annullato la sua presenza!"
 
-#: __main__.py:4085
+#: __main__.py:4133
 msgid "Meowth! {member} and their total of {trainer_count} trainers have left the raid!"
 msgstr "{trainer_count} allenatori tra cui {member} hanno annullato la loro presenza!"
 
-#: __main__.py:4088
+#: __main__.py:4136
 msgid "Meowth! {member} is no longer on their way!"
 msgstr "{member} non sta più arrivando!!"
 
-#: __main__.py:4090
+#: __main__.py:4138
 msgid "Meowth! {member} and their total of {trainer_count} trainers are no longer on their way!"
 msgstr "{trainer_count} allenatori tra cui {member} non stanno più arrivando!"
 
-#: __main__.py:4093
+#: __main__.py:4141
 msgid "Meowth! {member} has backed out of the lobby!"
 msgstr "{member} è uscito dalla lobby!"
 
-#: __main__.py:4095
+#: __main__.py:4143
 msgid "Meowth! {member} and their total of {trainer_count} trainers have backed out of the lobby!"
 msgstr "{trainer_count} allenatori tra cui {member} sono usciti dalla lobby!"
 
@@ -2031,73 +2043,73 @@ msgstr "{trainer_count} allenatori tra cui {member} sono usciti dalla lobby!"
 msgid "Meowth! How can you start when there's no one waiting at this raid!?"
 msgstr "Eh?! Come puoi iniziare se non c'è nessuno in attesa!?"
 
-#: __main__.py:4126
+#: __main__.py:4174
 msgid " to start at **{}** "
 msgstr " per iniziare a **{}** "
 
-#: __main__.py:4131
+#: __main__.py:4179
 msgid "Meowth! The group that was waiting{timestr}is starting the raid! Trainers {trainer_list}, if you are not in this group and are waiting for the next group, please respond with {here_emoji} or **!here**. If you need to ask those that just started to back out of their lobby, use **!backout**"
 msgstr "Il gruppo che era in attesa{timestr}sta iniziando! {trainer_list}, se non sei in questo gruppo e stai aspettando il prossimo, per favore rispondi con {here_emoji} or **!here**. Se hai bisogno di chiedere a quelli che hanno appena iniziato di tornare nella lobby, usa **!backout**!"
 
-#: __main__.py:4146
+#: __main__.py:4194
 msgid "Meowth! The group of {count} in the lobby has entered the raid! Wish them luck!"
 msgstr "Un gruppo di {count} persone nella lobby ha iniziato il raid! Buona fortuna!"
 
-#: __main__.py:4197
+#: __main__.py:4225
 msgid "Meowth! There's no one else in the lobby for this raid!"
 msgstr "Ops! Non c'è nessun altro nella lobby per questo raid!"
 
-#: __main__.py:4183
+#: __main__.py:4231
 msgid "Meowth! {author} has indicated that the group consisting of {lobby_list} and the people with them has backed out of the lobby! If this is inaccurate, please use **!lobby** or **!cancel** to help me keep my lists accurate!"
 msgstr "{author} ha detto che un gruppo di persone tra cui {lobby_list} sta uscendo dalla lobby! Se ciò non è corretto, usate **!lobby** o **!cancel** per correggermi."
 
-#: __main__.py:4197
+#: __main__.py:4245
 msgid "Meowth! There's no one in the lobby for this raid!"
 msgstr "Ops! Non c'è nessuno nella lobby per questo raid!"
 
-#: __main__.py:4199
+#: __main__.py:4247
 msgid "Meowth! {author} has requested a backout! If one of the following trainers reacts with the check mark, I will assume the group is backing out of the raid lobby as requested! {lobby_list}"
 msgstr "{author} ha chiesto di uscire! Se uno dei seguenti allenatori risponde con la spunta, darò la richiesta per accettata! {lobby_list}"
 
-#: __main__.py:4212
+#: __main__.py:4260
 msgid "Meowth! {user} confirmed the group is backing out!"
 msgstr "{user} ha confermato che il gruppo è uscito!"
 
-#: __main__.py:4230
-#: __main__.py:4608
+#: __main__.py:4278
+#: __main__.py:4633
 msgid "**Meowth!** "
 msgstr " "
 
-#: __main__.py:4280
+#: __main__.py:4328
 msgid " (assumed)"
 msgstr " (presunto)"
 
-#: __main__.py:4286
+#: __main__.py:4334
 msgid " Next group: **{}**"
 msgstr " Prossimo gruppo: **{}**"
 
-#: __main__.py:4291
-#: __main__.py:4293
+#: __main__.py:4339
+#: __main__.py:4341
 msgid " - Hatches: {expiry}{is_assumed}"
 msgstr " - Schiusa: {expiry}{is_assumed}"
 
-#: __main__.py:4295
+#: __main__.py:4343
 msgid " - Expiry: {expiry}{is_assumed}"
 msgstr " - Termine: {expiry}{is_assumed}"
 
-#: __main__.py:4296
+#: __main__.py:4344
 msgid ""
 "    {raidchannel}{expiry_text}\n"
 msgstr ""
 "    {raidchannel}{expiry_text}\n"
 
-#: __main__.py:4297
+#: __main__.py:4345
 msgid ""
 "    {interestcount} interested, {comingcount} coming, {herecount} here, {lobbycount} in the lobby.{start_str}\n"
 msgstr ""
 "    {interestcount} interessato/i, {comingcount} per strada, {herecount} in posizione, {lobbycount} nella lobby.{start_str}\n"
 
-#: __main__.py:4300
+#: __main__.py:4348
 msgid ""
 "**Here's the current raids for {0}**\n"
 "\n"
@@ -2105,34 +2117,34 @@ msgstr ""
 "**Ecco la lista di raid aperti per {0}**\n"
 "\n"
 
-#: __main__.py:4302
+#: __main__.py:4350
 msgid ""
 "**Active Raids:**\n"
 msgstr ""
 "**Raid in corso:**\n"
 
-#: __main__.py:4307
+#: __main__.py:4355
 msgid ""
 "**Raid Eggs:**\n"
 msgstr ""
 "**Uova raid:**\n"
 
-#: __main__.py:4312
+#: __main__.py:4360
 msgid ""
 "**EX Raids:**\n"
 msgstr ""
 "**Raid EX:**\n"
 
-#: __main__.py:4316
+#: __main__.py:4364
 msgid "Meowth! No active raids! Report one with **!raid <name> <location>**."
 msgstr "Nessun raid attivo! Segnalane uno con **!raid <nome boss> <luogo>**."
 
-#: __main__.py:4339
+#: __main__.py:4387
 msgid " Nobody has updated their status yet!"
 msgstr " Nessuno ha aggiornato il proprio stato!"
 
-#: __main__.py:4342
-#: __main__.py:4630
+#: __main__.py:4390
+#: __main__.py:4655
 msgid ""
 "\n"
 "The next group will be starting at **{}**"
@@ -2140,45 +2152,45 @@ msgstr ""
 "\n"
 "Il prossimo gruppo partirà a **{}**"
 
-#: __main__.py:4355
-#: __main__.py:4391
-#: __main__.py:4427
-#: __main__.py:4463
-#: __main__.py:4496
-#: __main__.py:4538
-#: __main__.py:4640
+#: __main__.py:4403
+#: __main__.py:4439
+#: __main__.py:4475
+#: __main__.py:4511
+#: __main__.py:4544
+#: __main__.py:4586
+#: __main__.py:4665
 msgid "**Meowth!**"
 msgstr "​"
 
-#: __main__.py:4378
-#: __main__.py:4380
+#: __main__.py:4426
+#: __main__.py:4428
 msgid " including {trainer_list} and the people with them! Let them know if there is a group forming"
 msgstr " tra cui {trainer_list}"
 
-#: __main__.py:4381
+#: __main__.py:4429
 msgid " {trainer_count} interested{including_string}!"
 msgstr " {trainer_count} interessati{including_string}!"
 
-#: __main__.py:4414
-#: __main__.py:4416
+#: __main__.py:4462
+#: __main__.py:4464
 msgid " including {trainer_list} and the people with them! Be considerate and wait for them if possible"
 msgstr " tra cui {trainer_list} ed altri"
 
-#: __main__.py:4417
+#: __main__.py:4465
 msgid " {trainer_count} on the way{including_string}!"
 msgstr " {trainer_count} per strada{including_string}!"
 
-#: __main__.py:4450
-#: __main__.py:4452
+#: __main__.py:4498
+#: __main__.py:4500
 msgid " including {trainer_list} and the people with them! Be considerate and let them know if and when you'll be there"
 msgstr " tra cui {trainer_list} ed altri"
 
-#: __main__.py:4453
+#: __main__.py:4501
 msgid " {trainer_count} waiting at the raid{including_string}!"
 msgstr " {trainer_count} sono in posizione{including_string}!"
 
-#: __main__.py:4486
-#: __main__.py:4488
+#: __main__.py:4534
+#: __main__.py:4536
 msgid " including {trainer_list} and the people with them! Use **!lobby** if you are joining them or **!backout** to request a backout"
 msgstr " tra cui {trainer_list} ed altri! Usa **!lobby** per unirti a loro o **!backout** per chiedere loro di uscire"
 
@@ -2192,7 +2204,7 @@ msgid ""
 msgstr ""
 "{type}{name}: **{total} totali,** {interested} interessati, {coming} in arrivo, {waiting} in attesa{type}\n"
 
-#: __main__.py:4529
+#: __main__.py:4577
 msgid ""
 " Boss numbers for the raid:\n"
 "{}"
@@ -2200,21 +2212,21 @@ msgstr ""
 " Numeri del boss per il raid:\n"
 "{}"
 
-#: __main__.py:4531
+#: __main__.py:4579
 msgid " Nobody has told me what boss they want!"
 msgstr " Nessuno mi ha detto che boss desidera!"
 
-#: __main__.py:4583
+#: __main__.py:4612
 msgid ""
 "{emoji} **{total} total,** {interested} interested, {coming} coming, {waiting} waiting {emoji}\n"
 msgstr ""
 "{emoji} **{total} totali,** {interested} interessato/i, {coming} per strada, {waiting} in attesa {emoji}\n"
 
-#: __main__.py:4590
+#: __main__.py:4615
 msgid "**{grey_number} total,** {greymaybe} interested, {greycoming} coming, {greywaiting} waiting"
 msgstr "**{grey_number} totali,** {greymaybe} interessato/i, {greycoming} per strada, {greywaiting} in attesa"
 
-#: __main__.py:4594
+#: __main__.py:4619
 msgid ""
 " Team numbers for the raid:\n"
 "{}"
@@ -2222,15 +2234,15 @@ msgstr ""
 " Numeri delle squadre per il raid:\n"
 "{}"
 
-#: __main__.py:4596
+#: __main__.py:4621
 msgid " Nobody has updated their status!"
 msgstr " Nessuno ha aggiornato il proprio stato!"
 
-#: __main__.py:4650
+#: __main__.py:4675
 msgid " Your current **!want** list is: ```{wantlist}```"
 msgstr " La tua lista dei desideri comprende: ```{wantlist}```"
 
-#: __main__.py:4652
+#: __main__.py:4677
 msgid " You don't have any wants! use **!want** to add some."
 msgstr " La tua lista dei desideri è vuota! Usa **!want** per riempirla."
 
