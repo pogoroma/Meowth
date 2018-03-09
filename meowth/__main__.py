@@ -3271,8 +3271,8 @@ async def recover(ctx):
         }
         async for message in channel.history(limit=500, reverse=True):
             if message.author.id == guild.me.id:
-                    c = _('Coordinate here')
-                    if c in message.content:
+                c = _('Coordinate here')
+                if c in message.content:
                     reportchannel = message.raw_channel_mentions[0]
                     raidmessage = message
                     break
