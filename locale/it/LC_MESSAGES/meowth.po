@@ -1607,7 +1607,7 @@ msgstr "%d/%m alle %H:%M"
 
 #: __main__.py:2962
 msgid "No one told me when the {raidtype} will {raidaction}, so I'm assuming it will {raidaction} on {expiry}!"
-msgstr "Nessuno mi ha detto quando questo {raidtype} {raidaction}, quindi dò per scontato che {raidaction} il {expiry}!"
+msgstr "Nessuno mi ha detto quando questo {raidtype} {raidaction}, quindi do per scontato che {raidaction} il {expiry}!"
 
 #: __main__.py:2964
 msgid "This {raidtype} will {raidaction} at {expiry_time}!"
@@ -1615,7 +1615,7 @@ msgstr "Questo {raidtype} {raidaction} alle {expiry_time}!"
 
 #: __main__.py:2966
 msgid "No one told me when the {raidtype} will {raidaction}, so I'm assuming it will {raidaction} at {expiry_time}!"
-msgstr "Nessuno mi ha detto quando questo {raidtype} {raidaction}, quindi dò per scontato che {raidaction} alle {expiry_time}!"
+msgstr "Nessuno mi ha detto quando questo {raidtype} {raidaction}, quindi do per scontato che {raidaction} alle {expiry_time}!"
 
 #: __main__.py:2979
 msgid "Raid Egg"
