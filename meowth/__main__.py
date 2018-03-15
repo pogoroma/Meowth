@@ -745,7 +745,7 @@ Events
 async def on_ready():
     Meowth.owner = discord.utils.get(
         Meowth.get_all_members(), id=config['master'])
-    await print(_('Starting up...'))
+    print(_('Starting up...'))
     Meowth.uptime = datetime.datetime.now()
     owners = []
     msg_success = 0
@@ -790,7 +790,7 @@ async def on_ready():
                 },
             }
         owners.append(guild.owner)
-    await print(_("Meowth! That's right!\n\n{server_count} servers connected.\n{member_count} members found.").format(server_count=guilds, member_count=users))
+    print(_("Meowth! That's right!\n\n{server_count} servers connected.\n{member_count} members found.").format(server_count=guilds, member_count=users))
     await maint_start()
 
 
