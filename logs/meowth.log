@@ -54,3 +54,14 @@
 [17/03/2018 11:35] INFO __main__ channel_cleanup 592: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
 [17/03/2018 11:35] INFO __main__ channel_cleanup 678: Channel_Cleanup - SAVING CHANGES
 [17/03/2018 11:35] INFO __main__ channel_cleanup 683: Channel_Cleanup ------ END ------
+[23/03/2018 01:49] INFO __main__ <module> 57: Serverdict Loaded Successfully
+[23/03/2018 01:49] INFO __main__ maint_start 751: Maintenance Tasks Started
+[23/03/2018 01:49] INFO __main__ guild_cleanup 710: Server_Cleanup ------ BEGIN ------
+[23/03/2018 01:49] INFO __main__ guild_cleanup 729: Server_Cleanup - SAVING CHANGES
+[23/03/2018 01:49] INFO __main__ guild_cleanup 734: Server_Cleanup ------ END ------
+[23/03/2018 01:49] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[23/03/2018 01:49] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[23/03/2018 01:49] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[23/03/2018 01:49] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[23/03/2018 01:49] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[23/03/2018 01:52] INFO __main__ save 983: CONFIG SAVED
