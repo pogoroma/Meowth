@@ -70,11 +70,11 @@ msgstr "schiuso-"
 msgid ""
 "**This egg has hatched!**\n"
 "\n"
-"...or the time has just expired. Trainers {trainer_list}: Update the raid to the pokemon that hatched using **!raid <pokemon>** or reset the hatch timer with **!timerset**. This channel will be deactivated until I get an update and I'll delete it in 45 minutes if I don't hear anything."
+"...or the time has just expired. Trainers {trainer_list}: Update the raid to the pokemon that hatched using **!raid <pokemon>** or reset the hatch timer with **!timerset**. This channel will be deactivated until I get an update and I'll delete it in 15 minutes if I don't hear anything."
 msgstr ""
 "**Quest'uovo si è schiuso!**\n"
 "\n"
-"...o semplicemente il tempo è scaduto. Allenatori {trainer_list}: Aggiornate il raid con il pokemon che si è schiuso usando **!raid <pokemon>** oppure impostate di nuovo il timer di schiusa con **!timerset**. Questo canale verrà disattivato finchè non verrà aggiornato e sarà cancellato in 45 minuti se non ricevo notizie."
+"...o semplicemente il tempo è scaduto. Allenatori {trainer_list}: Aggiornate il raid con il pokemon che si è schiuso usando **!raid <pokemon>** oppure impostate di nuovo il timer di schiusa con **!timerset**. Questo canale verrà disattivato finchè non verrà aggiornato e sarà cancellato in 15 minuti se non ricevo notizie."
 
 #: __main__.py:511
 msgid "**This level {level} raid egg has expired!**"
@@ -1334,7 +1334,7 @@ msgstr "Per favore, limita le segnalazioni al canale predisposto!"
 #: __main__.py:2343
 #: __main__.py:2396
 msgid "Meowth! Give more details when reporting! Usage: **!raid <pokemon name> <location>**"
-msgstr "Fornisci più informazioni quando segnali un raid! Utilizzo: **!raid <pokémon> <luogo e città> <minuti al termine>**."
+msgstr "Fornisci più informazioni quando segnali un raid! Utilizzo: **!raid <pokémon> <luogo e città> [minuti al termine]**."
 
 #: __main__.py:2325
 msgid "Meowth! **!raid assume** is not allowed in this level egg."
@@ -1421,12 +1421,12 @@ msgstr "Ehi {member}, se puoi imposta il tempo rimanente al termine del raid con
 
 #: __main__.py:2466
 msgid "Meowth! Give more details when reporting! Usage: **!raidegg <level> <location>**"
-msgstr "Fornisci più informazioni quando segnali un raid! Utilizzo: **!raidegg <livello> <luogo e città> <minuti alla schiusa>**."
+msgstr "Fornisci più informazioni quando segnali un raid! Utilizzo: **!raidegg <livello> <luogo e città> [minuti alla schiusa]**."
 
 #: __main__.py:2472
 #: __main__.py:2498
 msgid "Meowth! Give more details when reporting! Use at least: **!raidegg <level> <location>**. Type **!help** raidegg for more info."
-msgstr "Fornisci più informazioni quando segnali un raid! Usa almeno: **!raidegg <livello> <luogo e città> <minuti alla schiusa>**. Scrivi **!help raidegg** per altre informazioni."
+msgstr "Fornisci più informazioni quando segnali un raid! Usa almeno: **!raidegg <livello> <luogo e città> [minuti alla schiusa]**. Scrivi **!help raidegg** per altre informazioni."
 
 #: __main__.py:2493
 msgid "Meowth...that's too long. Level {raidlevel} Raid Eggs currently last no more than {hatchtime} minutes..."
@@ -2266,7 +2266,7 @@ msgstr ""
 
 #: __main__.py:4364
 msgid "Meowth! No active raids! Report one with **!raid <name> <location>**."
-msgstr "Nessun raid attivo! Segnalane uno con **!raid <nome boss> <luogo e città> <minuti al termine>**."
+msgstr "Nessun raid attivo! Segnalane uno con **!raid <nome boss> <luogo e città> [minuti al termine]**."
 
 #: __main__.py:4560
 #: __main__.py:4593

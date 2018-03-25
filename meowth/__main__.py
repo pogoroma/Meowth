@@ -508,8 +508,8 @@ async def expire_channel(channel):
                 new_name = _('hatched-')
                 new_name += channel.name
                 await channel.edit(name=new_name)
-                await channel.send(_("**This egg has hatched!**\n\n...or the time has just expired. Trainers {trainer_list}: Update the raid to the pokemon that hatched using **!raid <pokemon>** or reset the hatch timer with **!timerset**. This channel will be deactivated until I get an update and I'll delete it in 45 minutes if I don't hear anything.").format(trainer_list=', '.join(maybe_list)))
-            delete_time = (guild_dict[guild.id]['raidchannel_dict'][channel.id]['exp'] + (45 * 60)) - time.time()
+                await channel.send(_("**This egg has hatched!**\n\n...or the time has just expired. Trainers {trainer_list}: Update the raid to the pokemon that hatched using **!raid <pokemon>** or reset the hatch timer with **!timerset**. This channel will be deactivated until I get an update and I'll delete it in 15 minutes if I don't hear anything.").format(trainer_list=', '.join(maybe_list)))
+            delete_time = (guild_dict[guild.id]['raidchannel_dict'][channel.id]['exp'] + (15 * 60)) - time.time()
             expiremsg = _('**This level {level} raid egg has expired!**').format(
                 level=guild_dict[channel.guild.id]['raidchannel_dict'][channel.id]['egglevel'])
         else:
@@ -1108,9 +1108,9 @@ async def perms(ctx, channel_id = None):
         true_perms_str = '\n'.join(true_perms)
         if not meet_req:
             missing = '\n'.join([p for p in false_perms if p in req_perms_list])
-            data.append(f_("**MISSING** \n{missing} \n"))
+            data.append(f"**MANCANTE** \n{missing} \n")
         if true_perms_str:
-            data.append(f_("**ENABLED** \n{true_perms_str} \n"))
+            data.append(f"**ABILITATO** \n{true_perms_str} \n")
         return '\n'.join(data)
     guild_msg.append(perms_result(guild_perms))
     chan_msg.append(perms_result(chan_perms))
