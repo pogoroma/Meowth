@@ -3759,6 +3759,14 @@ async def weather(ctx, *, weather):
 Status Management
 """
 
+@Meowth.command()
+@checks.activeraidchannel()
+@checks.is_owner()
+async def ceLaLazio(ctx):
+    """Trolling"""
+    msg = '{member} fa sapere che causa impegni inderogabili (:eyes: ) non potrà partecipare a questo raid'.format(member=ctx.author.mention)
+    await ctx.channel.send(msg)
+
 @Meowth.command(aliases=['i', 'maybe'])
 @checks.activeraidchannel()
 async def interested(ctx, *, teamcounts: str=None):

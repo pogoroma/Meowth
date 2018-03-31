@@ -65,3 +65,233 @@
 [23/03/2018 01:49] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
 [23/03/2018 01:49] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
 [23/03/2018 01:52] INFO __main__ save 983: CONFIG SAVED
+[25/03/2018 15:08] INFO __main__ <module> 57: Serverdict Loaded Successfully
+[25/03/2018 15:08] INFO __main__ maint_start 751: Maintenance Tasks Started
+[25/03/2018 15:08] INFO __main__ guild_cleanup 710: Server_Cleanup ------ BEGIN ------
+[25/03/2018 15:08] INFO __main__ guild_cleanup 729: Server_Cleanup - SAVING CHANGES
+[25/03/2018 15:08] INFO __main__ guild_cleanup 734: Server_Cleanup ------ END ------
+[25/03/2018 15:08] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 15:08] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 15:08] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 15:08] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 15:08] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 15:18] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 15:18] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 15:18] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 15:18] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 15:18] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 15:28] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 15:28] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 15:28] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 15:28] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 15:28] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 15:37] INFO __main__ expiry_check 427: Expiry_Check - uovo-livello-5-cerenova
+[25/03/2018 15:37] INFO __main__ expiry_check 434: Expire_Channel - Channel Added To Watchlist - uovo-livello-5-cerenova
+[25/03/2018 15:38] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 15:38] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 15:38] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 15:38] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: Calbot test server: Channel:427460948735950859 - CHECKING
+[25/03/2018 15:38] INFO __main__ channel_cleanup 625: Channel_Cleanup - Server: Calbot test server: Channel:427460948735950859 - DOESN'T EXIST IN DISCORD
+[25/03/2018 15:38] INFO __main__ channel_cleanup 682: Channel_Cleanup - Channel Savedata Cleared - 427460948735950859
+[25/03/2018 15:38] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 15:38] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 15:48] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 15:48] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 15:48] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 15:48] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 15:48] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 15:58] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 15:58] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 15:58] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 15:58] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 15:58] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 16:08] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 16:08] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 16:08] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 16:08] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 16:08] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 16:18] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 16:18] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 16:18] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 16:18] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 16:18] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 16:28] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 16:28] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 16:28] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 16:28] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 16:28] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 16:38] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 16:38] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 16:38] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 16:38] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 16:38] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 16:45] INFO __main__ expiry_check 427: Expiry_Check - uovo-livello-5-the-cube-of-the-station
+[25/03/2018 16:45] INFO __main__ expiry_check 434: Expire_Channel - Channel Added To Watchlist - uovo-livello-5-the-cube-of-the-station
+[25/03/2018 16:45] INFO __main__ expiry_check 427: Expiry_Check - uovo-livello-5-the-cube-of-the-station
+[25/03/2018 16:48] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 16:48] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 16:48] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427478012636692494 - CHECKING
+[25/03/2018 16:48] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427478012636692494 (uovo-livello-5-the-cube-of-the-station) - EXISTS IN DISCORD
+[25/03/2018 16:48] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 16:48] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 16:48] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 16:58] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 16:58] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 16:58] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427478012636692494 - CHECKING
+[25/03/2018 16:58] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427478012636692494 (uovo-livello-5-the-cube-of-the-station) - EXISTS IN DISCORD
+[25/03/2018 16:58] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 16:58] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 16:58] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 16:59] INFO __main__ expiry_check 427: Expiry_Check - aggron-stazione-ladispoli-cerveteri
+[25/03/2018 16:59] INFO __main__ expiry_check 434: Expire_Channel - Channel Added To Watchlist - aggron-stazione-ladispoli-cerveteri
+[25/03/2018 16:59] INFO __main__ expiry_check 427: Expiry_Check - aggron-stazione-ladispoli-cerveteri
+[25/03/2018 17:02] INFO __main__ expiry_check 427: Expiry_Check - uovo-livello-5-cerenova-largo-sasso
+[25/03/2018 17:02] INFO __main__ expiry_check 434: Expire_Channel - Channel Added To Watchlist - uovo-livello-5-cerenova-largo-sasso
+[25/03/2018 17:02] INFO __main__ expiry_check 427: Expiry_Check - uovo-livello-5-cerenova-largo-sasso
+[25/03/2018 17:08] INFO __main__ guild_cleanup 710: Server_Cleanup ------ BEGIN ------
+[25/03/2018 17:08] INFO __main__ guild_cleanup 729: Server_Cleanup - SAVING CHANGES
+[25/03/2018 17:08] INFO __main__ guild_cleanup 734: Server_Cleanup ------ END ------
+[25/03/2018 17:08] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 17:08] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 17:08] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427478012636692494 - CHECKING
+[25/03/2018 17:08] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427478012636692494 (uovo-livello-5-the-cube-of-the-station) - EXISTS IN DISCORD
+[25/03/2018 17:08] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427481623018209282 - CHECKING
+[25/03/2018 17:08] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427481623018209282 (aggron-stazione-ladispoli-cerveteri) - EXISTS IN DISCORD
+[25/03/2018 17:08] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427482440202715136 - CHECKING
+[25/03/2018 17:08] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427482440202715136 (uovo-livello-5-cerenova-largo-sasso) - EXISTS IN DISCORD
+[25/03/2018 17:08] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 17:08] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 17:08] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 17:18] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 17:18] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 17:18] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427478012636692494 - CHECKING
+[25/03/2018 17:18] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427478012636692494 (uovo-livello-5-the-cube-of-the-station) - EXISTS IN DISCORD
+[25/03/2018 17:18] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427481623018209282 - CHECKING
+[25/03/2018 17:18] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427481623018209282 (aggron-stazione-ladispoli-cerveteri) - EXISTS IN DISCORD
+[25/03/2018 17:18] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427482440202715136 - CHECKING
+[25/03/2018 17:18] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427482440202715136 (uovo-livello-5-cerenova-largo-sasso) - EXISTS IN DISCORD
+[25/03/2018 17:18] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 17:18] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 17:18] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 17:20] INFO __main__ expiry_check 445: Expire_Channel - Egg Auto Hatched - uovo-livello-5-the-cube-of-the-station
+[25/03/2018 17:20] INFO __main__ expiry_check 427: Expiry_Check - lugia-the-cube-of-the-station
+[25/03/2018 17:20] INFO __main__ expiry_check 434: Expire_Channel - Channel Added To Watchlist - lugia-the-cube-of-the-station
+[25/03/2018 17:23] INFO __main__ expiry_check 460: Expire_Channel - Channel Expired And Removed From Watchlist - aggron-stazione-ladispoli-cerveteri
+[25/03/2018 17:23] INFO __main__ expire_channel 471: Expire_Channel - aggron-stazione-ladispoli-cerveteri
+[25/03/2018 17:23] INFO __main__ expire_channel 489: Expire_Channel - Channel Expired - aggron-stazione-ladispoli-cerveteri
+[25/03/2018 17:28] INFO __main__ expire_channel 557: Expire_Channel - Channel Deleted - scaduto-aggron-stazione-ladispoli-cerveteri
+[25/03/2018 17:28] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 17:28] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 17:28] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427478012636692494 - CHECKING
+[25/03/2018 17:28] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427478012636692494 (lugia-the-cube-of-the-station) - EXISTS IN DISCORD
+[25/03/2018 17:28] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427482440202715136 - CHECKING
+[25/03/2018 17:28] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427482440202715136 (uovo-livello-5-cerenova-largo-sasso) - EXISTS IN DISCORD
+[25/03/2018 17:28] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 17:28] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 17:28] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 17:38] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 17:38] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 17:38] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427478012636692494 - CHECKING
+[25/03/2018 17:38] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427478012636692494 (lugia-the-cube-of-the-station) - EXISTS IN DISCORD
+[25/03/2018 17:38] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427482440202715136 - CHECKING
+[25/03/2018 17:38] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427482440202715136 (uovo-livello-5-cerenova-largo-sasso) - EXISTS IN DISCORD
+[25/03/2018 17:38] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 17:38] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 17:38] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 17:39] INFO __main__ expiry_check 445: Expire_Channel - Egg Auto Hatched - uovo-livello-5-cerenova-largo-sasso
+[25/03/2018 17:39] INFO __main__ expiry_check 427: Expiry_Check - lugia-cerenova-largo-sasso
+[25/03/2018 17:39] INFO __main__ expiry_check 434: Expire_Channel - Channel Added To Watchlist - lugia-cerenova-largo-sasso
+[25/03/2018 17:45] INFO __main__ expiry_check 427: Expiry_Check - uovo-livello-5-monumento-ai-caduti
+[25/03/2018 17:45] INFO __main__ expiry_check 434: Expire_Channel - Channel Added To Watchlist - uovo-livello-5-monumento-ai-caduti
+[25/03/2018 17:45] INFO __main__ expiry_check 427: Expiry_Check - uovo-livello-5-monumento-ai-caduti
+[25/03/2018 17:48] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 17:48] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 17:48] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427478012636692494 - CHECKING
+[25/03/2018 17:48] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427478012636692494 (lugia-the-cube-of-the-station) - EXISTS IN DISCORD
+[25/03/2018 17:48] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427482440202715136 - CHECKING
+[25/03/2018 17:48] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427482440202715136 (lugia-cerenova-largo-sasso) - EXISTS IN DISCORD
+[25/03/2018 17:48] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427493136239951880 - CHECKING
+[25/03/2018 17:48] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427493136239951880 (uovo-livello-5-monumento-ai-caduti) - EXISTS IN DISCORD
+[25/03/2018 17:48] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 17:48] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 17:48] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 17:58] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 17:58] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 17:58] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427478012636692494 - CHECKING
+[25/03/2018 17:58] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427478012636692494 (lugia-the-cube-of-the-station) - EXISTS IN DISCORD
+[25/03/2018 17:58] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427482440202715136 - CHECKING
+[25/03/2018 17:58] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427482440202715136 (lugia-cerenova-largo-sasso) - EXISTS IN DISCORD
+[25/03/2018 17:58] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427493136239951880 - CHECKING
+[25/03/2018 17:58] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427493136239951880 (uovo-livello-5-monumento-ai-caduti) - EXISTS IN DISCORD
+[25/03/2018 17:58] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 17:58] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 17:58] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 18:01] INFO __main__ expiry_check 445: Expire_Channel - Egg Auto Hatched - uovo-livello-5-monumento-ai-caduti
+[25/03/2018 18:01] INFO __main__ expiry_check 427: Expiry_Check - lugia-monumento-ai-caduti
+[25/03/2018 18:01] INFO __main__ expiry_check 434: Expire_Channel - Channel Added To Watchlist - lugia-monumento-ai-caduti
+[25/03/2018 18:05] INFO __main__ expiry_check 460: Expire_Channel - Channel Expired And Removed From Watchlist - lugia-the-cube-of-the-station
+[25/03/2018 18:05] INFO __main__ expire_channel 471: Expire_Channel - lugia-the-cube-of-the-station
+[25/03/2018 18:05] INFO __main__ expire_channel 489: Expire_Channel - Channel Expired - lugia-the-cube-of-the-station
+[25/03/2018 18:08] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 18:08] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 18:08] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427478012636692494 - CHECKING
+[25/03/2018 18:08] INFO __main__ channel_cleanup 625: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427478012636692494 - DOESN'T EXIST IN DISCORD
+[25/03/2018 18:08] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427482440202715136 - CHECKING
+[25/03/2018 18:08] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427482440202715136 (lugia-cerenova-largo-sasso) - EXISTS IN DISCORD
+[25/03/2018 18:08] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427493136239951880 - CHECKING
+[25/03/2018 18:08] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427493136239951880 (lugia-monumento-ai-caduti) - EXISTS IN DISCORD
+[25/03/2018 18:08] INFO __main__ channel_cleanup 682: Channel_Cleanup - Channel Savedata Cleared - 427478012636692494
+[25/03/2018 18:08] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 18:08] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 18:08] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 18:18] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 18:18] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 18:18] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427482440202715136 - CHECKING
+[25/03/2018 18:18] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427482440202715136 (lugia-cerenova-largo-sasso) - EXISTS IN DISCORD
+[25/03/2018 18:18] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427493136239951880 - CHECKING
+[25/03/2018 18:18] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427493136239951880 (lugia-monumento-ai-caduti) - EXISTS IN DISCORD
+[25/03/2018 18:18] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 18:18] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 18:18] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 18:24] INFO __main__ expiry_check 460: Expire_Channel - Channel Expired And Removed From Watchlist - lugia-cerenova-largo-sasso
+[25/03/2018 18:24] INFO __main__ expire_channel 471: Expire_Channel - lugia-cerenova-largo-sasso
+[25/03/2018 18:24] INFO __main__ expire_channel 489: Expire_Channel - Channel Expired - lugia-cerenova-largo-sasso
+[25/03/2018 18:28] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 18:28] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 18:28] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427482440202715136 - CHECKING
+[25/03/2018 18:28] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427482440202715136 (scaduto-lugia-cerenova-largo-sasso) - EXISTS IN DISCORD
+[25/03/2018 18:28] INFO __main__ channel_cleanup 653: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427482440202715136 - = RECENTLY EXPIRED NONACTIVE RAID
+[25/03/2018 18:28] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427493136239951880 - CHECKING
+[25/03/2018 18:28] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427493136239951880 (lugia-monumento-ai-caduti) - EXISTS IN DISCORD
+[25/03/2018 18:28] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 18:28] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 18:28] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 18:28] INFO __main__ expire_channel 471: Expire_Channel - scaduto-lugia-cerenova-largo-sasso
+[25/03/2018 18:28] INFO __main__ expire_channel 489: Expire_Channel - Channel Expired - scaduto-lugia-cerenova-largo-sasso
+[25/03/2018 18:29] INFO __main__ expire_channel 557: Expire_Channel - Channel Deleted - scaduto-lugia-cerenova-largo-sasso
+[25/03/2018 18:38] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 18:38] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 18:38] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427493136239951880 - CHECKING
+[25/03/2018 18:38] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427493136239951880 (lugia-monumento-ai-caduti) - EXISTS IN DISCORD
+[25/03/2018 18:38] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 18:38] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 18:38] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 18:46] INFO __main__ expiry_check 460: Expire_Channel - Channel Expired And Removed From Watchlist - lugia-monumento-ai-caduti
+[25/03/2018 18:46] INFO __main__ expire_channel 471: Expire_Channel - lugia-monumento-ai-caduti
+[25/03/2018 18:46] INFO __main__ expire_channel 489: Expire_Channel - Channel Expired - lugia-monumento-ai-caduti
+[25/03/2018 18:48] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 18:48] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 18:48] INFO __main__ channel_cleanup 620: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427493136239951880 - CHECKING
+[25/03/2018 18:48] INFO __main__ channel_cleanup 629: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427493136239951880 (scaduto-lugia-monumento-ai-caduti) - EXISTS IN DISCORD
+[25/03/2018 18:48] INFO __main__ channel_cleanup 653: Channel_Cleanup - Server: PoGO Raid - Cerveteri/Ladispoli: Channel:427493136239951880 - = RECENTLY EXPIRED NONACTIVE RAID
+[25/03/2018 18:48] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 18:48] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 18:48] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
+[25/03/2018 18:48] INFO __main__ expire_channel 471: Expire_Channel - scaduto-lugia-monumento-ai-caduti
+[25/03/2018 18:48] INFO __main__ expire_channel 489: Expire_Channel - Channel Expired - scaduto-lugia-monumento-ai-caduti
+[25/03/2018 18:51] INFO __main__ expire_channel 557: Expire_Channel - Channel Deleted - scaduto-lugia-monumento-ai-caduti
+[25/03/2018 18:58] INFO __main__ channel_cleanup 601: Channel_Cleanup ------ BEGIN ------
+[25/03/2018 18:58] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 339352041057157120 - CHECKING FOR SERVER (PoGO Raid - Cerveteri/Ladispoli)  - BEGIN CHECKING SERVER
+[25/03/2018 18:58] INFO __main__ channel_cleanup 611: Channel_Cleanup - Server: 419105151811321866 - CHECKING FOR SERVER (Calbot test server)  - BEGIN CHECKING SERVER
+[25/03/2018 18:58] INFO __main__ channel_cleanup 697: Channel_Cleanup - SAVING CHANGES
+[25/03/2018 18:58] INFO __main__ channel_cleanup 702: Channel_Cleanup ------ END ------
