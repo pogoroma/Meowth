@@ -2169,6 +2169,10 @@ msgid "Meowth! {member} and their total of {trainer_count} trainers have backed 
 msgstr "{trainer_count} allenatori tra cui {member} sono usciti dalla lobby!"
 
 #: __main__.py:4192
+msgid "Meowth! How can you start when the egg hasn't hatched!?"
+msgstr "Eh?! Come puoi iniziare se l'uovo non si è nemmeno schiuso?"
+
+#: __main__.py:4192
 msgid "Meowth! How can you start when there's no one waiting at this raid!?"
 msgstr "Eh?! Come puoi iniziare se non c'è nessuno in attesa!?"
 

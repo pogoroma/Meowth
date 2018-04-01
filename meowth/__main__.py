@@ -1135,7 +1135,7 @@ async def perms(ctx, channel_id = None):
         await ctx.author.send(embed=embed)
 
 @Meowth.command()
-@checks.is_owner()
+@commands.has_permissions(manage_guild=True)
 async def welcome(ctx, user: discord.Member=None):
     """Test welcome on yourself or mentioned member.
 
@@ -3557,7 +3557,7 @@ async def recover(ctx):
         }
         await _edit_party(channel, message.author)
         recovermsg = _("Meowth! This channel has been recovered! However, there may be some inaccuracies in what I remembered! Here's what I have:")
-        bulletpoint = parse_emoji(ctx.guild, ':small_blue_diamond:')
+        bulletpoint = '🔹'
         recovermsg += ('\n' + bulletpoint) + (await _interest(ctx))
         recovermsg += ('\n' + bulletpoint) + (await _otw(ctx))
         recovermsg += ('\n' + bulletpoint) + (await _waiting(ctx))
@@ -3762,9 +3762,9 @@ Status Management
 @Meowth.command()
 @checks.activeraidchannel()
 @checks.is_owner()
-async def ceLaLazio(ctx):
+async def celalazio(ctx):
     """Trolling"""
-    msg = '{member} fa sapere che causa impegni inderogabili (:eyes: ) non potrà partecipare a questo raid'.format(member=ctx.author.mention)
+    msg = '{member} è attualmente irreperibile causa impegni inderogabili. :eyes:'.format(member=ctx.author.mention)
     await ctx.channel.send(msg)
 
 @Meowth.command(aliases=['i', 'maybe'])
@@ -4347,6 +4347,10 @@ async def starting(ctx, team: str = ''):
     id_startinglist = []
     team_list = []
     trainer_dict = copy.deepcopy(guild_dict[ctx.guild.id]['raidchannel_dict'][ctx.channel.id]['trainer_dict'])
+    if guild_dict[ctx.guild.id]['raidchannel_dict'][ctx.channel.id].get('type',None) == 'egg':
+        starting_str = _("Meowth! How can you start when the egg hasn't hatched!?")
+        await ctx.channel.send(starting_str)
+        return
     for trainer in trainer_dict:
         user = ctx.guild.get_member(trainer)
         if team:
@@ -4703,12 +4707,12 @@ async def _interest(ctx, tag=False, team=False):
         if team:
             for role in user.roles:
                 if role.name.lower() == team:
-                    name_list.append(('**' + user.name) + '**')
+                    name_list.append(('**' + user.display_name) + '**')
                     maybe_list.append(user.mention)
                     break
         if (trainer_dict[trainer]['status'] == 'maybe') and user and team == False:
             ctx_maybecount += trainer_dict[trainer]['count']
-            name_list.append(('**' + user.name) + '**')
+            name_list.append(('**' + user.display_name) + '**')
             maybe_list.append(user.mention)
         elif (trainer_dict[trainer]['status'] == 'maybe') and user and team:
             ctx_maybecount += trainer_dict[trainer]['party'][team_index]
@@ -4747,12 +4751,12 @@ async def _otw(ctx, tag=False, team=False):
         if team:
             for role in user.roles:
                 if role.name.lower() == team:
-                    name_list.append(('**' + user.name) + '**')
+                    name_list.append(('**' + user.display_name) + '**')
                     otw_list.append(user.mention)
                     break
         if (trainer_dict[trainer]['status'] == 'omw') and user and team == False:
             ctx_omwcount += trainer_dict[trainer]['count']
-            name_list.append(('**' + user.name) + '**')
+            name_list.append(('**' + user.display_name) + '**')
             otw_list.append(user.mention)
         elif (trainer_dict[trainer]['status'] == 'omw') and user and team:
             ctx_omwcount += trainer_dict[trainer]['party'][team_index]
@@ -4791,12 +4795,12 @@ async def _waiting(ctx, tag=False, team=False):
         if team:
             for role in user.roles:
                 if role.name.lower() == team:
-                    name_list.append(('**' + user.name) + '**')
+                    name_list.append(('**' + user.display_name) + '**')
                     waiting_list.append(user.mention)
                     break
         if (trainer_dict[trainer]['status'] == 'waiting') and user and team == False:
             ctx_waitingcount += trainer_dict[trainer]['count']
-            name_list.append(('**' + user.name) + '**')
+            name_list.append(('**' + user.display_name) + '**')
             waiting_list.append(user.mention)
         elif (trainer_dict[trainer]['status'] == 'waiting') and user and team:
             ctx_waitingcount += trainer_dict[trainer]['party'][team_index]
@@ -4834,12 +4838,12 @@ async def _lobbylist(ctx, tag=False, team=False):
         if team:
             for role in user.roles:
                 if role.name.lower() == team:
-                    name_list.append(('**' + user.name) + '**')
+                    name_list.append(('**' + user.display_name) + '**')
                     lobby_list.append(user.mention)
                     break
         if (trainer_dict[trainer]['status'] == 'lobby') and user and team == False:
             ctx_lobbycount += trainer_dict[trainer]['count']
-            name_list.append(('**' + user.name) + '**')
+            name_list.append(('**' + user.display_name) + '**')
             lobby_list.append(user.mention)
         elif (trainer_dict[trainer]['status'] == 'lobby') and user and team:
             ctx_lobbycount += trainer_dict[trainer]['party'][team_index]
