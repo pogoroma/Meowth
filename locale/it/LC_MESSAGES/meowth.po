@@ -1649,7 +1649,7 @@ msgstr ""
 
 #: __main__.py:2727
 msgid "Ends on %B %d at %I:%M %p (%H:%M)"
-msgstr "Termina il %d/%m alle %H:%M"
+msgstr "Termine: %d/%m alle %H:%M"
 
 #: __main__.py:2750
 msgid ""
@@ -1910,7 +1910,7 @@ msgstr "uovo-livello-[1-5]"
 msgid "Hatches on %B %d at %I:%M %p"
 msgstr "Schiusa: %d/%m alle %H:%M"
 
-#: __main__.py:3309
+#: __main__.py:3600
 msgid "Ends on %B %d at %I:%M %p"
 msgstr "Termine: %d/%m alle %H:%M"
 

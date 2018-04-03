@@ -3563,6 +3563,9 @@ async def recover(ctx):
                     reportchannel = message.raw_channel_mentions[0]
                     raidmessage = message
                     break
+        if not raidmessage
+            await channel.send(_("Meowth! I couldn't recognize this as a raid channel!"))
+            return
         if egg:
             raidtype = 'egg'
             chsplit = egg.string.split('-')
@@ -3596,7 +3599,7 @@ async def recover(ctx):
                 exp = raidmessage.created_at.replace(tzinfo=datetime.timezone.utc).timestamp() + (60 * raid_info['raid_eggs'][get_level(pokemon)]['raidtime'])
                 manual_timer = False
             else:
-                localend = datetime.datetime.strptime(topic[:(- 8)], _('Ends on %B %d at %I:%M %p'))
+                localend = datetime.datetime.strptime(topic[:(- 1)], _('Ends on %B %d at %I:%M %p'))
                 utcend = localend - datetime.timedelta(hours=guild_dict[guild.id]['offset'])
                 exp = utcend.replace(year=now.year, tzinfo=datetime.timezone.utc).timestamp()
                 manual_timer = True
@@ -4528,7 +4531,7 @@ async def starting(ctx, team: str = ''):
         starting_str = _('Meowth! The group that was waiting{timestr}is starting the raid! Trainers {trainer_list}, if you are not in this group and are waiting for the next group, please respond with {here_emoji} or **!here**. If you need to ask those that just started to back out of their lobby, use **!backout**').format(timestr=timestr, trainer_list=', '.join(ctx_startinglist), here_emoji=parse_emoji(ctx.guild, config['here_id']))
         guild_dict[ctx.guild.id]['raidchannel_dict'][ctx.channel.id]['lobby'] = {"exp":time.time() + 120, "team":team}
         if starttime:
-            starting_str += _('\n\nThe start time has also been cleared, new groups can set a new start time wtih **!starttime HH:MM AM/PM** (You can also omit AM/PM and use 24-hour time!).')
+            starting_str += _('\n\nThe start time has also been cleared, new groups can set a new start time with **!starttime HH:MM AM/PM** (You can also omit AM/PM and use 24-hour time!).')
             report_channel = Meowth.get_channel(guild_dict[ctx.guild.id]['raidchannel_dict'][ctx.channel.id]['reportcity'])
             raidmsg = await ctx.channel.get_message(guild_dict[ctx.guild.id]['raidchannel_dict'][ctx.channel.id]['raidmessage'])
             reportmsg = await report_channel.get_message(guild_dict[ctx.guild.id]['raidchannel_dict'][ctx.channel.id]['raidreport'])
