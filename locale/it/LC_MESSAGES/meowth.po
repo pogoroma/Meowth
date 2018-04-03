@@ -28,6 +28,14 @@ msgstr "Attento! \"{entered_word}\" non è un Pokémon! Forse intendevi \"{corre
 msgid "Meowth! \"{entered_word}\" is not a Pokemon! Check your spelling!"
 msgstr "Ehi! \"{entered_word}\" non è un Pokémon! Controlla la tua ortografia!"
 
+#: __main__.py:315
+#: __main__.py:2380
+msgid "Meowth! **{word}** isn't a Pokemon!"
+msgstr "Ehi! **{word}** non è un Pokémon!"
+
+#: __main__.py:317
+msgid " Did you mean **{correction}**?"
+msgstr " Intendevi forse **{correction}**?"
 #: __main__.py:406
 #: __main__.py:1356
 msgid ""
@@ -172,6 +180,18 @@ msgstr "Riavvio in corso..."
 msgid "Shutting down..."
 msgstr "Arresto in corso..."
 
+#: __main__.py:1140
+msgid "Meowth! Regional raid boss cleared!"
+msgstr "Boss regionali eliminati!"
+
+#: __main__.py:1143
+#: __main__.py:1145
+msgid "Meowth! Regional raid boss set to **{boss}**!"
+msgstr "Boss regionale impostato su **{boss}**!"
+
+#: __main__.py:1148
+msgid "Meowth! That Pokemon doesn't appear in raids!"
+msgstr "Ehi! Quel pokémon non appare nei raid!"
 #: __main__.py:1002
 msgid "Prefix has been set to: `{}`"
 msgstr "Il prefisso ora è: `{}`"
@@ -739,6 +759,8 @@ msgid ""
 "You have configured the following channels as raid reporting channels: {citychannel_list}\n"
 "\n"
 "In the same order as they appear above, please give the names of the categories you would like raids reported in each channel to appear in. You do not need to use different categories for each channel, but they do need to be pre-existing categories. Separate each category name with a comma. Response can be either category name or ID."
+"\n"
+"Example: `kansas city, hull, 1231231241561337813`"
 msgstr ""
 "I seguenti canali sono abilitati alle segnalazioni: {citychannel_list}\n"
 "\n"
@@ -747,15 +769,22 @@ msgstr ""
 #: __main__.py:1545
 #: __main__.py:1592
 msgid ""
-"The category list you provided doesn't match with your server's categories.\n"
 "\n"
-"The following aren't in your server: **{invalid_categories}**\n"
 "\n"
-"Please double check your category list and resend your response."
+"The following aren't in your server: **{invalid_categories}**"
 msgstr ""
-"La lista di categorie che hai fornito non corrisponde con quelle del tuo server.\n"
+"\n"
 "\n"
 "Le seguenti categorie non sono nel tuo server: **{invalid_categories}**\n"
+
+#: __main__.py:1779
+#: __main__.py:1835
+msgid ""
+"\n"
+"\n"
+"Please double check your category list and resend your response. If you just made these categories, try again."
+msgstr ""
+"\n"
 "\n"
 "Ricontrolla la lista e invia nuovamente la tua risposta."
 
@@ -782,11 +811,25 @@ msgstr ""
 "\n"
 "Le seguenti categorie non sono nel tuo server: **{invalid_categories}**"
 
+#: __main__.py:1783
+msgid ""
+"The number of categories I found in your server doesn't match the number of channels you gave me earlier!\n"
+"\n"
+"I'll show you the two lists to compare:\n"
+"\n"
+"**Matched Channels:** {channellist}\n"
+"**Matched Categories:** {catlist}\n"
+"\n"
+"Please double check that your categories match up with your provided channels and resend your response."
+msgstr ""
+
 #: __main__.py:1557
 msgid ""
 "Pokemon Go currently has six levels of raids. Please provide the names of the categories you would like each level of raid to appear in. Use the following order: 1, 2, 3, 4, 5, EX \n"
 "\n"
-"You do not need to use different categories for each level, but they do need to be pre-existing categories. Separate each category name with a comma. Response can be either category name or ID."
+"You do not need to use different categories for each level, but they do need to be pre-existing categories. Separate each category name with a comma. Response can be either category name or ID.\n"
+"\n"
+"Example: `level 1-3, level 1-3, level 1-3, level 4, level 5, 1231231241561337813`"
 msgstr ""
 
 #: __main__.py:1595
@@ -913,6 +956,9 @@ msgid ""
 "Reply with **none** to disable this feature, or reply with a comma separated list of phrases you want me to listen in raid channels for."
 msgstr ""
 
+#: __main__.py:1957
+msgid "Phrase list disabled."
+msgstr ""
 #: __main__.py:1828
 msgid "Phrase list set."
 msgstr ""
@@ -1031,6 +1077,19 @@ msgstr "Livello {}"
 #: __main__.py:1787
 msgid "level\\s\\d"
 msgstr "livell\\s\\d"
+
+#: __main__.py:2079
+msgid "Meowth! Level {} reported"
+msgstr "Livello {} segnalato"
+
+#: __main__.py:2079
+#: __main__.py:2080
+msgid "\\s.*\\sraid\\ssegnalato"
+msgstr ""
+
+#: __main__.py:2080
+msgid "Meowth! Level {}"
+msgstr "Livello {}"
 
 #: __main__.py:1805
 msgid "Are you sure you want to clear all status for this raid? Everybody will have to RSVP again. If you are wanting to clear one user's status, use `!setstatus <user> cancel`"
@@ -1173,14 +1232,6 @@ msgstr "Ops! Questo comando è stato spostato, ora è **!list here**."
 msgid "Meowth! Hey {member}, I don't know if you meant **!coming** to say that you are coming or **!list coming** to see the other trainers on their way"
 msgstr "Ehi {member}, non ho capito se intendevi **!coming** per dire che stavi arrivando o **!list coming** per vedere chi è per strada."
 
-#: __main__.py:2075
-#: __main__.py:2162
-#: __main__.py:2368
-#: __main__.py:2573
-#: __main__.py:2639
-msgid "Meowth! **{word}** isn't a Pokemon!"
-msgstr "Ehi! **{word}** non è un Pokémon!"
-
 #: __main__.py:2087
 msgid "Maximum guild roles reached. Pokemon not added."
 msgstr "Limite massimo di ruoli nel server superato. Il pokémon non è stato aggiunto."
@@ -1237,13 +1288,6 @@ msgstr ""
 "\n"
 "**{count} non valido/i:**"
 
-#: __main__.py:2163
-#: __main__.py:2369
-#: __main__.py:2574
-#: __main__.py:2640
-msgid " Did you mean **{correction}**?"
-msgstr " Intendevi forse **{correction}**?"
-
 #: __main__.py:2213
 msgid "{0}, you have no pokemon in your want list."
 msgstr "{0}, non hai pokémon nella tua lista dei desideri."
@@ -1276,14 +1320,6 @@ msgstr "%H:%M"
 #: __main__.py:2323
 msgid "Meowth! Give more details when reporting! Usage: **!wild <pokemon name> <location>**"
 msgstr "Fornisci più informazioni quando segnali! Utilizzo: **!wild <nome pokémon> <luogo>**."
-
-#: __main__.py:2260
-msgid "Meowth! {word} isn't a Pokemon!"
-msgstr "Ehi! {word} non è un pokémon!"
-
-#: __main__.py:2262
-msgid " Did you mean {correction}?"
-msgstr " Intendevi forse {correction}?"
 
 #: __main__.py:2272
 msgid "Ask {author} if my directions aren't perfect!"
@@ -1375,6 +1411,31 @@ msgstr "**Debolezze:**"
 msgid "{weakness_list}"
 msgstr "{weakness_list}"
 
+#: __main__.py:2686
+#: __main__.py:2801
+#: __main__.py:2873
+#: __main__.py:2973
+#: __main__.py:3100
+msgid "**Next Group:**"
+msgstr "**Prossimo gruppo:**"
+
+#: __main__.py:2686
+#: __main__.py:2801
+#: __main__.py:3100
+msgid "Set with **!starttime**"
+msgstr "Imposta con **!starttime**"
+
+#: __main__.py:2687
+#: __main__.py:2802
+#: __main__.py:3101
+msgid "Set with **!timerset**"
+msgstr "Imposta con **!timerset**"
+
+#: __main__.py:2687
+#: __main__.py:2974
+#: __main__.py:3101
+msgid "**Expires:**"
+msgstr "**Termine:**"
 #: __main__.py:2417
 msgid "Meowth! {pokemon} raid reported by {member}! Details: {location_details}. Coordinate in {raid_channel}"
 msgstr "Raid di {pokemon} segnalato da {member}! Dettagli: {location_details}. Coordinatevi in {raid_channel}."
@@ -1442,6 +1503,10 @@ msgstr "Ehi! I livelli delle uova raid vanno da 1 a 5!"
 msgid "Meowth! Click here for directions to the coming raid!"
 msgstr "Clicca qui per scoprire come arrivare al luogo del raid!"
 
+#: __main__.py:2802
+#: __main__.py:2874
+msgid "**Hatches:**"
+msgstr "**Schiusa:**"
 #: __main__.py:2530
 msgid "Meowth! Level {level} raid egg reported by {member}! Details: {location_details}. Coordinate in {raid_channel}"
 msgstr "Uovo raid di livello {level} segnalato da {member}! Dettagli: {location_details}. Coordinatevi in {raid_channel}."
@@ -1806,6 +1871,10 @@ msgstr "Cambio dell'orario di inizio annullato."
 msgid "Meowth! The current start time has been set to: **{starttime}**"
 msgstr "Ricevuto! Si è deciso di iniziare la battaglia alle **{starttime}**."
 
+#: __main__.py:3431
+#: __main__.py:4535
+msgid "**Next Group**"
+msgstr "**Prossimo gruppo**"
 #: __main__.py:3160
 msgid "Meowth! The current start time is: **{starttime}**"
 msgstr "L'avvio della sfida è programmato per le **{starttime}**!"
@@ -2176,13 +2245,24 @@ msgstr "Eh?! Come puoi iniziare se l'uovo non si è nemmeno schiuso?"
 msgid "Meowth! How can you start when there's no one waiting at this raid!?"
 msgstr "Eh?! Come puoi iniziare se non c'è nessuno in attesa!?"
 
+#: __main__.py:4511
+msgid "Are you sure you would like to start this raid?"
+msgstr "Sicuro di voler iniziare questo raid?"
+
+#: __main__.py:4513
+msgid "Are you sure you would like to start this raid? You can also do **!starting [team]** to start one team only."
+msgstr "Sicuro di voler iniziare questo raid? "
 #: __main__.py:4174
 msgid " to start at **{}** "
-msgstr " per iniziare a **{}** "
+msgstr " per iniziare alle ore **{}** "
 
 #: __main__.py:4179
 msgid "Meowth! The group that was waiting{timestr}is starting the raid! Trainers {trainer_list}, if you are not in this group and are waiting for the next group, please respond with {here_emoji} or **!here**. If you need to ask those that just started to back out of their lobby, use **!backout**"
 msgstr "Il gruppo che era in attesa{timestr}sta iniziando! {trainer_list}, se non sei in questo gruppo e stai aspettando il prossimo, per favore rispondi con {here_emoji} or **!here**. Se hai bisogno di chiedere a quelli che hanno appena iniziato di tornare nella lobby, usa **!backout**!"
+
+#: __main__.py:4179
+msgid "\n\nThe start time has also been cleared, new groups can set a new start time wtih **!starttime HH:MM AM/PM** (You can also omit AM/PM and use 24-hour time!)."
+msgstr "L'orario di avvio è stato ripulito, il prossimo gruppo può impostare un nuovo orario con **!starttime HH:MM**."
 
 #: __main__.py:4194
 msgid "Meowth! The group of {count} in the lobby has entered the raid! Wish them luck!"
@@ -2294,7 +2374,7 @@ msgstr " 0 per strada!"
 #: __main__.py:4659
 #: __main__.py:4954
 msgid " 0 waiting at the raid!"
-msgstr " 0 sono in posizione!"
+msgstr " 0 in posizione!"
 
 #: __main__.py:4566
 #: __main__.py:4599
@@ -2302,7 +2382,7 @@ msgstr " 0 sono in posizione!"
 #: __main__.py:4661
 #: __main__.py:4956
 msgid " 0 in the lobby!"
-msgstr " 0 sono entrati nella lobby!"
+msgstr " 0 nella lobby!"
 
 #: __main__.py:4569
 msgid " Nobody has updated their status yet!"
@@ -2342,7 +2422,7 @@ msgstr " {trainer_count} interessati{including_string}!"
 #: __main__.py:4462
 #: __main__.py:4464
 msgid " including {trainer_list} and the people with them! Be considerate and wait for them if possible"
-msgstr " tra cui {trainer_list} ed altri"
+msgstr " tra cui {trainer_list}"
 
 #: __main__.py:4465
 msgid " {trainer_count} on the way{including_string}!"
@@ -2351,7 +2431,7 @@ msgstr " {trainer_count} per strada{including_string}!"
 #: __main__.py:4498
 #: __main__.py:4500
 msgid " including {trainer_list} and the people with them! Be considerate and let them know if and when you'll be there"
-msgstr " tra cui {trainer_list} ed altri"
+msgstr " tra cui {trainer_list}"
 
 #: __main__.py:4501
 msgid " {trainer_count} waiting at the raid{including_string}!"
@@ -2360,7 +2440,7 @@ msgstr " {trainer_count} sono in posizione{including_string}!"
 #: __main__.py:4534
 #: __main__.py:4536
 msgid " including {trainer_list} and the people with them! Use **!lobby** if you are joining them or **!backout** to request a backout"
-msgstr " tra cui {trainer_list} ed altri! Usa **!lobby** per unirti a loro o **!backout** per chiedere loro di uscire"
+msgstr " tra cui {trainer_list}! Usa **!lobby** per unirti a loro o **!backout** per chiedere loro di uscire"
 
 #: __main__.py:4537
 msgid " {trainer_count} in the lobby{including_string}!"
