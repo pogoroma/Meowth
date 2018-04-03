@@ -3563,7 +3563,7 @@ async def recover(ctx):
                     reportchannel = message.raw_channel_mentions[0]
                     raidmessage = message
                     break
-        if not raidmessage
+        if not raidmessage:
             await channel.send(_("Meowth! I couldn't recognize this as a raid channel!"))
             return
         if egg:
