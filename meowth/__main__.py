@@ -1029,7 +1029,7 @@ Events
 async def on_ready():
     Meowth.owner = discord.utils.get(
         Meowth.get_all_members(), id=config['master'])
-    await _print(Meowth.owner, _('Starting up...'))
+    print(_('Starting up...'))
     Meowth.uptime = datetime.datetime.now()
     owners = []
     msg_success = 0
@@ -1080,7 +1080,7 @@ async def on_ready():
                 'trainers':{}
             }
         owners.append(guild.owner)
-    await _print(Meowth.owner, _("Meowth! That's right!\n\n{server_count} servers connected.\n{member_count} members found.").format(server_count=guilds, member_count=users))
+    print(_("Meowth! That's right!\n\n{server_count} servers connected.\n{member_count} members found.").format(server_count=guilds, member_count=users))
     await maint_start()
 
 @Meowth.event
@@ -3673,7 +3673,7 @@ async def leaderboard(ctx, type="total"):
     leaderboard = []
     rank = 1
     field_value = ""
-    typelist = ["total", "raids", "exraids", "wilds", "research", "eggs"]
+    typelist = [_("total"), _("raids"), _("exraids"), _("wilds"), _("research"), _("eggs")]
     type = type.lower()
     if type not in typelist:
         await ctx.send(_("Leaderboard type not supported. Please select from: **total, raids, eggs, exraids, wilds, research**"))
@@ -5090,7 +5090,7 @@ async def timerset(ctx, *,timer):
             except:
                 if ('am' in ' '.join(timer_split).lower()) or ('pm' in ' '.join(timer_split).lower()):
                     try:
-                        start = datetime.datetime.strptime((' '.join(timer_split) + ' ') + str(now.year), '%m/%d %I:%M %p %Y')
+                        start = datetime.datetime.strptime((' '.join(timer_split) + ' ') + str(now.year), _('%m/%d %I:%M %p %Y'))
                         if start.month < now.month:
                             start = start.replace(year=now.year + 1)
                     except ValueError:
@@ -5098,7 +5098,7 @@ async def timerset(ctx, *,timer):
                         return
                 else:
                     try:
-                        start = datetime.datetime.strptime((' '.join(timer_split) + ' ') + str(now.year), '%m/%d %H:%M %Y')
+                        start = datetime.datetime.strptime((' '.join(timer_split) + ' ') + str(now.year), _('%m/%d %H:%M %Y'))
                         if start.month < now.month:
                             start = start.replace(year=now.year + 1)
                     except ValueError:
@@ -5416,7 +5416,7 @@ async def recover(ctx):
             raidtype = 'egg'
             chsplit = egg.string.split('-')
             del chsplit[0]
-            egglevel = chsplit[0]
+            egglevel = chsplit[1]
             del chsplit[0]
             del chsplit[0]
             raid_details = ' '.join(chsplit)
@@ -5426,7 +5426,7 @@ async def recover(ctx):
                 manual_timer = False
             else:
                 topicsplit = topic.split('|')
-                localhatch = datetime.datetime.strptime(topicsplit[0][:(- 9)], _('Hatches on %B %d at %I:%M %p'))
+                localhatch = datetime.datetime.strptime(topicsplit[0], _('Hatches on %B %d at %I:%M %p'))
                 utchatch = localhatch - datetime.timedelta(hours=guild_dict[guild.id]['configure_dict']['settings']['offset'])
                 exp = utchatch.replace(year=now.year, tzinfo=datetime.timezone.utc).timestamp()
                 manual_timer = True
@@ -5445,11 +5445,11 @@ async def recover(ctx):
                 exp = raidmessage.created_at.replace(tzinfo=datetime.timezone.utc).timestamp() + (60 * raid_info['raid_eggs'][get_level(pokemon)]['raidtime'])
                 manual_timer = False
             else:
-                localend = datetime.datetime.strptime(topic[:(- 8)], _('Ends on %B %d at %I:%M %p'))
+                localend = datetime.datetime.strptime(topic, _('Ends on %B %d at %I:%M %p'))
                 utcend = localend - datetime.timedelta(hours=guild_dict[guild.id]['configure_dict']['settings']['offset'])
                 exp = utcend.replace(year=now.year, tzinfo=datetime.timezone.utc).timestamp()
                 manual_timer = True
-        elif name.split('-')[0] == 'ex':
+        elif name.split('-')[1] == 'ex':
             raidtype = 'egg'
             egglevel = 'EX'
             chsplit = name.split('-')
@@ -5463,7 +5463,7 @@ async def recover(ctx):
                 manual_timer = False
             else:
                 topicsplit = topic.split('|')
-                localhatch = datetime.datetime.strptime(topicsplit[0][:(- 9)], _('Hatches on %B %d at %I:%M %p'))
+                localhatch = datetime.datetime.strptime(topicsplit[0], _('Hatches on %B %d at %I:%M %p'))
                 utchatch = localhatch - datetime.timedelta(hours=guild_dict[guild.id]['configure_dict']['settings']['offset'])
                 exp = utchatch.replace(year=now.year, tzinfo=datetime.timezone.utc).timestamp()
                 manual_timer = True
@@ -5482,7 +5482,7 @@ async def recover(ctx):
                 manual_timer = False
             else:
                 topicsplit = topic.split('|')
-                localhatch = datetime.datetime.strptime(topicsplit[0][:(- 9)], _('Hatches on %B %d at %I:%M %p'))
+                localhatch = datetime.datetime.strptime(topicsplit[0], _('Hatches on %B %d at %I:%M %p'))
                 utchatch = localhatch - datetime.timedelta(hours=guild_dict[guild.id]['configure_dict']['settings']['offset'])
                 exp = utchatch.replace(year=now.year, tzinfo=datetime.timezone.utc).timestamp()
                 manual_timer = True
@@ -5993,13 +5993,16 @@ async def _maybe(channel, author, count, party, entered_interest=None):
     if (not party):
         for role in author.roles:
             if role.name.lower() == 'mystic':
-                allblue = count
+                allblue = 1
+                allunknown = count - 1
                 break
             elif role.name.lower() == 'valor':
-                allred = count
+                allred = 1
+                allunknown = count - 1
                 break
             elif role.name.lower() == 'instinct':
-                allyellow = count
+                allyellow = 1
+                allunknown = count - 1
                 break
         else:
             allunknown = count
@@ -6100,13 +6103,16 @@ async def _coming(channel, author, count, party, entered_interest=None):
     if (not party):
         for role in author.roles:
             if role.name.lower() == 'mystic':
-                allblue = count
+                allblue = 1
+                allunknown = count - 1
                 break
             elif role.name.lower() == 'valor':
-                allred = count
+                allred = 1
+                allunknown = count - 1
                 break
             elif role.name.lower() == 'instinct':
-                allyellow = count
+                allyellow = 1
+                allunknown = count - 1
                 break
         else:
             allunknown = count
@@ -6210,13 +6216,16 @@ async def _here(channel, author, count, party, entered_interest=None):
     if (not party):
         for role in author.roles:
             if role.name.lower() == 'mystic':
-                allblue = count
+                allblue = 1
+                allunknown = count - 1
                 break
             elif role.name.lower() == 'valor':
-                allred = count
+                allred = 1
+                allunknown = count - 1
                 break
             elif role.name.lower() == 'instinct':
-                allyellow = count
+                allyellow = 1
+                allunknown = count - 1
                 break
         else:
             allunknown = count
@@ -6278,6 +6287,7 @@ async def _party_status(ctx, total, teamcounts):
         'yellow': instinct,
         'i': instinct,
         'y': instinct,
+        'g': instinct,
         'valor': valor,
         'red': valor,
         'v': valor,
@@ -6286,7 +6296,6 @@ async def _party_status(ctx, total, teamcounts):
         'grey': unknown,
         'gray': unknown,
         'u': unknown,
-        'g': unknown,
     }
     regx = re.compile('([a-zA-Z]+)([0-9]+)|([0-9]+)([a-zA-Z]+)')
     for count in teamcounts:
@@ -6322,7 +6331,8 @@ async def _party_status(ctx, total, teamcounts):
                     return await channel.send(_('Meowth! Something is not adding up! Try making sure your total matches what each team adds up to!'))
                 unknown[1] = total - team_total
             else:
-                team_aliases[my_team][1] = total - team_total
+                team_aliases[my_team][1] = 1
+                unknown[1] = total - team_total - 1
     partylist = {'mystic':mystic[1], 'valor':valor[1], 'instinct':instinct[1], 'unknown':unknown[1]}
     result = [total, partylist]
     return result
