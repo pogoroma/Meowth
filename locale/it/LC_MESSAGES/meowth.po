@@ -18,7 +18,7 @@ msgstr ""
 
 #: __main__.py:295
 msgid "Received admin command {command} from unauthorized user, {user}!"
-msgstr "Ho ricevuto un comando amministratore {command} da un utente non autorizzato, {user}!"
+msgstr "Ricevuto comando amministratore ({command}) da utente non autorizzato ({user})!"
 
 #: __main__.py:304
 msgid "Meowth! \"{entered_word}\" is not a Pokemon! Did you mean \"{corrected_word}\"?"
@@ -36,6 +36,7 @@ msgstr "Ehi! **{word}** non è un Pokémon!"
 #: __main__.py:317
 msgid " Did you mean **{correction}**?"
 msgstr " Intendevi forse **{correction}**?"
+
 #: __main__.py:406
 #: __main__.py:1356
 msgid ""
@@ -192,6 +193,7 @@ msgstr "Boss regionale impostato su **{boss}**!"
 #: __main__.py:1148
 msgid "Meowth! That Pokemon doesn't appear in raids!"
 msgstr "Ehi! Quel pokémon non appare nei raid!"
+
 #: __main__.py:1002
 msgid "Prefix has been set to: `{}`"
 msgstr "Il prefisso ora è: `{}`"
@@ -206,7 +208,7 @@ msgstr "Il prefisso di questo server è: `{}`"
 
 #: __main__.py:1088
 msgid "Bot Permissions"
-msgstr "Permessi Bot"
+msgstr "Permessi bot"
 
 #: __main__.py:1103
 msgid "**FAIL**"
@@ -272,7 +274,7 @@ msgstr "Annuncio annullato."
 #: __main__.py:1101
 #: __main__.py:1113
 msgid "Announcement Sent."
-msgstr "Annuncio Inviato"
+msgstr "Annuncio inviato"
 
 #: __main__.py:1103
 msgid "What channel would you like me to send it to?"
@@ -284,7 +286,7 @@ msgstr "Ops! Quel canale non esiste! Riprova quando sarai pronto."
 
 #: __main__.py:1128
 msgid "For support, contact us on our Discord server. Invite Code: hhVjAN8"
-msgstr "Se hai bisogno di aiuto, contattaci nel nostro server Discord. Codice Invito: hhVjAN8."
+msgstr "Se hai bisogno di aiuto, contattaci nel nostro server Discord. Codice invito: hhVjAN8."
 
 #: __main__.py:1142
 msgid "Announcement sent to {} server owners: {} successful, {} failed."
@@ -292,7 +294,7 @@ msgstr "Annuncio inviato a {} proprietari server: {} riuscito/i, {} fallito/i"
 
 #: __main__.py:1147
 msgid "Announcement Timed Out."
-msgstr "Annuncio Scaduto."
+msgstr "Annuncio scaduto."
 
 #: __main__.py:1194
 msgid ""
@@ -430,11 +432,11 @@ msgstr ""
 
 #: __main__.py:1242
 msgid "Team Assignments enabled!"
-msgstr "Assegnazione squadra abilitata!"
+msgstr "Assegnazione squadre abilitata!"
 
 #: __main__.py:1246
 msgid "Team Assignments disabled!"
-msgstr "Assegnazione squadra disabilitata!"
+msgstr "Assegnazione squadre disabilitata!"
 
 #: __main__.py:1253
 #: __main__.py:1358
@@ -531,7 +533,7 @@ msgstr ""
 
 #: __main__.py:1303
 msgid "Please check the data given and retry a new welcome message, or reply with **N** to use the default."
-msgstr "Controlla i danti inseriti e prova con un altro messaggio di benvenuto, o rispondi con **N** per usare quello predefinito."
+msgstr "Controlla i dati inseriti e prova con un altro messaggio di benvenuto, o rispondi con **N** per usare quello predefinito."
 
 #: __main__.py:1314
 msgid "Please enter a new welcome message, or reply with **N** to use the default."
@@ -557,7 +559,7 @@ msgid ""
 "\n"
 "Respond with: **channel-name** of a channel in your server or **DM** to Direct Message:"
 msgstr ""
-"In quale canale del tuo server vuoi che io scriva i messaggi di benvenuto? Se preferisci posso anche inviarli come messaggio diretto.\n"
+"In quale canale del tuo server vuoi che scriva i messaggi di benvenuto? Se preferisci posso anche inviarli come messaggio diretto.\n"
 "\n"
 "Rispondi con: **nome-canale** di un canale nel tuo server o **DM** per l'opzione messaggio diretto:"
 
@@ -1084,8 +1086,8 @@ msgstr "Livello {} segnalato"
 
 #: __main__.py:2079
 #: __main__.py:2080
-msgid "\\s.*\\sraid\\ssegnalato"
-msgstr ""
+msgid "Meowth!\\s.*\\sraid\\sreported"
+msgstr "\\s.*\\sraid\\ssegnalato"
 
 #: __main__.py:2080
 msgid "Meowth! Level {}"
@@ -1436,6 +1438,7 @@ msgstr "Imposta con **!timerset**"
 #: __main__.py:3101
 msgid "**Expires:**"
 msgstr "**Termine:**"
+
 #: __main__.py:2417
 msgid "Meowth! {pokemon} raid reported by {member}! Details: {location_details}. Coordinate in {raid_channel}"
 msgstr "Raid di {pokemon} segnalato da {member}! Dettagli: {location_details}. Coordinatevi in {raid_channel}."
