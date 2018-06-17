@@ -1,1 +1,1 @@
-worker: python launcher.py -s
+worker: python launcher.py -r
