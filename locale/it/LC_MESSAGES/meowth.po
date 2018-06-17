@@ -811,19 +811,19 @@ msgstr "Non ho potuto impostare i miei permessi in questo canale. Per favore, as
 
 #: __main__.py:2102
 msgid "Welcome Channel set to {channel}"
-msgstr ""
+msgstr "Canale di benvenuto impostato su {channel}"
 
 #: __main__.py:2105
 msgid "The channel you provided isn't in your server. Please double check your channel and resend your response."
-msgstr ""
+msgstr "Il canale fornito non è nel tuo server. Per favore controlla ciò che hai scritto e reinvia la tua risposta."
 
 #: __main__.py:2111
 msgid "Welcome Message disabled!"
-msgstr ""
+msgstr "Messaggio di benvenuto disabilitato!"
 
 #: __main__.py:2148
 msgid "Raid Reporting Channels"
-msgstr ""
+msgstr "Canali per segnalazioni Raid"
 
 #: __main__.py:2148
 msgid ""
@@ -1148,7 +1148,7 @@ msgstr "Counter automatici disabilitati"
 
 #: __main__.py:2630
 msgid "Automatic Counter Levels set to: {levels}"
-msgstr "Livello counter automatici impostato su: {levels}"
+msgstr "Livelli counter automatici impostati su: {levels}"
 
 #: __main__.py:2633
 msgid "Please enter at least one level from 1 to EX separated by comma. Ex: `4,5,EX` or **N** to turn off automatic counters."
@@ -3607,6 +3607,7 @@ msgstr ""
 "`{prefix}timerset <minuti>`\n"
 "`{prefix}starttime <ora>`\n"
 "`<link google maps>`\n"
+"`{prefix}duplicate`\n"
 "**Presenze**\n"
 "`{prefix}(i/c/h)...\n"
 "[totali]...\n"
@@ -3645,6 +3646,7 @@ msgstr ""
 "`Imposta i minuti al termine/alla schiusa`\n"
 "`Imposta orario di inizio sfida`\n"
 "`Aggiorna posizione google maps`\n"
+"`Per eliminare un canale doppione o errato`\n"
 "\n"
 "`interessati/per strada/presenti`\n"
 "`# di allenatori`\n"
