@@ -1,8 +1,8 @@
 
 *.bat
+config.json
+.vscode/
 
-logs/meowth.log
+logs/
 __pychache__/
 *.py[cod]
-*.env
-*.pot
