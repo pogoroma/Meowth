@@ -4404,7 +4404,7 @@ async def _eggassume(args, raid_channel, author=None):
     await raid_channel.send(_('{roletest}Meowth! This egg will be assumed to be {pokemon} when it hatches!').format(roletest=roletest,pokemon=entered_raid.title()))
     if str(egglevel) in guild_dict[raid_channel.guild.id]['configure_dict']['counters']['auto_levels']:
         ctrs_dict = await _get_generic_counters(raid_channel.guild, entered_raid, weather)
-        ctrsmsg = "Here are the best counters for the raid boss in currently known weather conditions! Update weather with **!weather**. If you know the moveset of the boss, you can react to this message with the matching emoji and I will update the counters."
+        ctrsmsg = _("Here are the best counters for the raid boss in currently known weather conditions! Update weather with **!weather**. If you know the moveset of the boss, you can react to this message with the matching emoji and I will update the counters.")
         ctrsmessage = await raid_channel.send(content=ctrsmsg,embed=ctrs_dict[0]['embed'])
         ctrsmessage_id = ctrsmessage.id
         await ctrsmessage.pin()
@@ -5426,7 +5426,7 @@ async def recover(ctx):
                 manual_timer = False
             else:
                 topicsplit = topic.split('|')
-                localhatch = datetime.datetime.strptime(topicsplit[0], _('Hatches on %B %d at %I:%M %p'))
+                localhatch = datetime.datetime.strptime(topicsplit[0][:(- 1)], _('Hatches on %B %d at %I:%M %p'))
                 utchatch = localhatch - datetime.timedelta(hours=guild_dict[guild.id]['configure_dict']['settings']['offset'])
                 exp = utchatch.replace(year=now.year, tzinfo=datetime.timezone.utc).timestamp()
                 manual_timer = True
@@ -5463,7 +5463,7 @@ async def recover(ctx):
                 manual_timer = False
             else:
                 topicsplit = topic.split('|')
-                localhatch = datetime.datetime.strptime(topicsplit[0], _('Hatches on %B %d at %I:%M %p'))
+                localhatch = datetime.datetime.strptime(topicsplit[0][:(- 1)], _('Hatches on %B %d at %I:%M %p'))
                 utchatch = localhatch - datetime.timedelta(hours=guild_dict[guild.id]['configure_dict']['settings']['offset'])
                 exp = utchatch.replace(year=now.year, tzinfo=datetime.timezone.utc).timestamp()
                 manual_timer = True
@@ -5482,7 +5482,7 @@ async def recover(ctx):
                 manual_timer = False
             else:
                 topicsplit = topic.split('|')
-                localhatch = datetime.datetime.strptime(topicsplit[0], _('Hatches on %B %d at %I:%M %p'))
+                localhatch = datetime.datetime.strptime(topicsplit[0][:(- 1)], _('Hatches on %B %d at %I:%M %p'))
                 utchatch = localhatch - datetime.timedelta(hours=guild_dict[guild.id]['configure_dict']['settings']['offset'])
                 exp = utchatch.replace(year=now.year, tzinfo=datetime.timezone.utc).timestamp()
                 manual_timer = True
@@ -5509,7 +5509,7 @@ async def recover(ctx):
                             if _('trainers') in message.content:
                                 messagesplit = message.content.split()
                                 if messagesplit[-1].isdigit():
-                                    count = int(messagesplit[-13])
+                                    count = int(messagesplit[0])
                                     party = {'mystic':int(messagesplit[-10]), 'valor':int(messagesplit[-7]), 'instinct':int(messagesplit[-4]), 'unknown':int(messagesplit[-1])}
                                 else:
                                     count = 1
@@ -6332,7 +6332,7 @@ async def _party_status(ctx, total, teamcounts):
                 unknown[1] = total - team_total
             else:
                 team_aliases[my_team][1] = 1
-                unknown[1] = total - team_total - 1
+                unknown[1] += total - team_total - 1
     partylist = {'mystic':mystic[1], 'valor':valor[1], 'instinct':instinct[1], 'unknown':unknown[1]}
     result = [total, partylist]
     return result
