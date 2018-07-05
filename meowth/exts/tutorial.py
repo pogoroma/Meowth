@@ -58,7 +58,7 @@ class Tutorial:
             await self.wait_for_cmd(ctx.tutorial_channel, ctx.author, 'want')
 
             # acknowledge and wait a second before continuing
-            await ctx.tutorial_channel.send("Great job!")
+            await ctx.tutorial_channel.send(_("Great job!"))
             await asyncio.sleep(1)
 
         # if no response for 5 minutes, close tutorial
