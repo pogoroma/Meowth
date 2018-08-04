@@ -51,7 +51,7 @@ class Tutorial:
             "Io creo dei riuoli per ciascun Pokémon che le persone vogliono, "
             "e @menzionare questi ruoli invierà una notifica a chi "
             f"ne ha fatto richiesta con **{ctx.prefix}want**!\n"
-            f"Prova il comando {ctx.prefix}want!\n"
+            f"Prova il comando {ctx.prefix}want\n"
             f"Esempio: `{ctx.prefix}want unown`")
 
         try:
@@ -434,7 +434,7 @@ class Tutorial:
         await ctx.message.delete()
         await ctx.send(
             ("Ehilà! Ho creato un canale riservato a te dove potrai "
-             " svolgere il tutorial! "
+             "svolgere il tutorial! "
              f"Continua in {ctx.tutorial_channel.mention}"),
             delete_after=20.0)
 
