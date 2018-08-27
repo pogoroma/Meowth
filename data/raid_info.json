@@ -60,7 +60,6 @@
       "egg": "legendary", 
       "egg_img": "5.png", 
       "pokemon": [
-        250,
         377
       ], 
       "hatchtime": 60, 
