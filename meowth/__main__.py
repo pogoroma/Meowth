@@ -5230,7 +5230,7 @@ async def timerset(ctx, *,timer):
             now = datetime.datetime.utcnow() + datetime.timedelta(hours=guild_dict[channel.guild.id]['configure_dict']['settings']['offset'])
             timer_split = timer.lower().split()
             try:
-                start = dateparser.parse(' '.join(timer_split).lower(), settings={'DATE_ORDER': 'MDY'})
+                start = dateparser.parse(' '.join(timer_split).lower(), settings={'DATE_ORDER': 'DMY'})
             except:
                 if ('am' in ' '.join(timer_split).lower()) or ('pm' in ' '.join(timer_split).lower()):
                     try:
@@ -5340,7 +5340,7 @@ async def starttime(ctx,*,start_time=""):
     start = None
     if rc_d.get('meetup',{}):
         try:
-            start = dateparser.parse(' '.join(start_split).lower(), settings={'DATE_ORDER': 'MDY'})
+            start = dateparser.parse(' '.join(start_split).lower(), settings={'DATE_ORDER': 'DMY'})
             endtime = guild_dict[guild.id]['raidchannel_dict'][channel.id]['meetup'].get('end',False)
             if start < now:
                 await channel.send(_('Meowth! Please enter a time in the future.'))

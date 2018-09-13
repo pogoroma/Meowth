@@ -2694,15 +2694,15 @@ msgstr "Cambio dell'orario di inizio annullato."
 
 #: __main__.py:5271
 msgid "Meowth! The current start time has been set to: **{starttime}**"
-msgstr "Ricevuto! Si è deciso di iniziare la battaglia alle **{starttime}**."
+msgstr "Ricevuto! Si è deciso di iniziare alle **{starttime}**."
 
 #: __main__.py:5292
 msgid "Meowth! The current start time is: **{starttime}**"
-msgstr "L'avvio della sfida è programmato per le **{starttime}**!"
+msgstr "L'inizio è programmato per le **{starttime}**!"
 
 #: __main__.py:5294
 msgid "Meowth! No start time has been set, set one with **!starttime HH:MM AM/PM**! (You can also omit AM/PM and use 24-hour time!)"
-msgstr "Ehi, nessun orario di avvio è stato deciso! Impostalo con **!starttime HH:MM**."
+msgstr "Ehi, nessun orario di inizio è stato deciso! Impostalo con **!starttime HH:MM**."
 
 #: __main__.py:5318
 msgid ""
@@ -2740,7 +2740,7 @@ msgstr "Termine: %d/%m alle %H:%M"
 
 #: __main__.py:5490
 msgid "Meowth! I couldn't recognize this as a raid channel!"
-msgstr "Ops! Non riconosco questo come un canale raid!"
+msgstr "Ops! Non riconosco questo come un canale raid o raduno!"
 
 #: __main__.py:5494
 #: __main__.py:5500
