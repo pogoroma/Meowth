@@ -4,11 +4,11 @@
       "egg": "normal", 
       "egg_img": "1.png", 
       "pokemon": [
-        90,
-        129,
-        361,
-        403,
-        418
+        311,
+        312,
+        278,
+        353,
+        355
       ], 
       "hatchtime": 60, 
       "raidtime": 45
@@ -17,9 +17,11 @@
       "egg": "normal", 
       "egg_img": "2.png", 
       "pokemon": [
-        87, 
-        215,
-        103,
+        281, 
+        253,
+        256,
+        259,
+        302,
         303
       ], 
       "hatchtime": 60, 
@@ -29,10 +31,10 @@
       "egg": "rare", 
       "egg_img": "3.png", 
       "pokemon": [
-        26,
-        68, 
-        124,
-        221
+        337,
+        338, 
+        342,
+        344
       ], 
       "hatchtime": 60, 
       "raidtime": 45
@@ -41,10 +43,10 @@
       "egg": "rare", 
       "egg_img": "4.png", 
       "pokemon": [
-        105,
-        131, 
-        248, 
-        365
+        275,
+        359, 
+        306, 
+        376
       ], 
       "hatchtime": 60, 
       "raidtime": 45
@@ -53,7 +55,8 @@
       "egg": "legendary", 
       "egg_img": "5.png", 
       "pokemon": [
-        485
+        382,
+        383
       ], 
       "hatchtime": 60, 
       "raidtime": 45
