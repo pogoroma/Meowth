@@ -55,7 +55,6 @@
       "egg": "legendary", 
       "egg_img": "5.png", 
       "pokemon": [
-        384,
         483
       ], 
       "hatchtime": 60, 
