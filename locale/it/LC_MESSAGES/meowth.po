@@ -3331,11 +3331,11 @@ msgstr " Nessuno mi ha detto che boss desidera!"
 msgid ""
 "{emoji} **{total} total,** {interested} interested, {coming} coming, {here} waiting {emoji}\n"
 msgstr ""
-"{emoji} **{total} totali,** {interested} interessato/i, {coming} per strada, {waiting} in attesa {emoji}\n"
+"{emoji} **{total} totali,** {interested} interessato/i, {coming} per strada, {here} in attesa {emoji}\n"
 
 #: __main__.py:7117
 msgid "**{grey_number} total,** {greymaybe} interested, {greycoming} coming, {greyhere} waiting"
-msgstr "**{grey_number} totali,** {greymaybe} interessato/i, {greycoming} per strada, {greywaiting} in attesa"
+msgstr "**{grey_number} totali,** {greymaybe} interessato/i, {greycoming} per strada, {greyhere} in attesa"
 
 #: __main__.py:7121
 msgid ""
