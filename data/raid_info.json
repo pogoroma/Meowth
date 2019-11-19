@@ -46,6 +46,7 @@
       "pokemon": [
         6, 
         105, 
+        110, 
         248, 
         257, 
         359
@@ -66,7 +67,6 @@
       "egg": "EX", 
       "egg_img": "EX.png", 
       "pokemon": [
-        150, 
         486
       ], 
       "hatchtime": 15, 
