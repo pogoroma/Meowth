@@ -13,11 +13,11 @@ class PokemonNotFound(CommandError):
         self.pokemon = pokemon
         self.retry = retry
 
-class Pokedex:
+class Pokedex(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-class Pokemon():
+class Pokemon(commands.Cog):
     """Represents a Pokemon.
 
     This class contains the attributes of a specific pokemon, and
