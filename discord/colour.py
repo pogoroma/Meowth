@@ -3,7 +3,7 @@
 """
 The MIT License (MIT)
 
-Copyright (c) 2015-2017 Rapptz
+Copyright (c) 2015-2019 Rapptz
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the "Software"),
@@ -23,6 +23,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 """
+
+import colorsys
 
 class Colour:
     """Represents a Discord role colour. This class is similar
@@ -82,27 +84,33 @@ class Colour:
 
     @property
     def r(self):
-        """Returns the red component of the colour."""
+        """:class:`int`: Returns the red component of the colour."""
         return self._get_byte(2)
 
     @property
     def g(self):
-        """Returns the green component of the colour."""
+        """:class:`int`: Returns the green component of the colour."""
         return self._get_byte(1)
 
     @property
     def b(self):
-        """Returns the blue component of the colour."""
+        """:class:`int`: Returns the blue component of the colour."""
         return self._get_byte(0)
 
     def to_rgb(self):
-        """Returns an (r, g, b) tuple representing the colour."""
+        """Tuple[:class:`int`, :class:`int`, :class:`int`]: Returns an (r, g, b) tuple representing the colour."""
         return (self.r, self.g, self.b)
 
     @classmethod
     def from_rgb(cls, r, g, b):
         """Constructs a :class:`Colour` from an RGB tuple."""
         return cls((r << 16) + (g << 8) + b)
+
+    @classmethod
+    def from_hsv(cls, h, s, v):
+        """Constructs a :class:`Colour` from an HSV tuple."""
+        rgb = colorsys.hsv_to_rgb(h, s, v)
+        return cls.from_rgb(*(int(x * 255) for x in rgb))
 
     @classmethod
     def default(cls):

@@ -3,7 +3,7 @@
 """
 The MIT License (MIT)
 
-Copyright (c) 2015-2017 Rapptz
+Copyright (c) 2015-2019 Rapptz
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the "Software"),
@@ -27,6 +27,7 @@ DEALINGS IN THE SOFTWARE.
 import threading
 import subprocess
 import audioop
+import asyncio
 import logging
 import shlex
 import time
@@ -36,7 +37,12 @@ from .opus import Encoder as OpusEncoder
 
 log = logging.getLogger(__name__)
 
-__all__ = [ 'AudioSource', 'PCMAudio', 'FFmpegPCMAudio', 'PCMVolumeTransformer' ]
+__all__ = (
+    'AudioSource',
+    'PCMAudio',
+    'FFmpegPCMAudio',
+    'PCMVolumeTransformer',
+)
 
 class AudioSource:
     """Represents an audio stream.
@@ -54,8 +60,8 @@ class AudioSource:
 
         Subclasses must implement this.
 
-        If the audio is complete, then returning an empty *bytes-like* object
-        to signal this is the way to do so.
+        If the audio is complete, then returning an empty
+        :term:`py:bytes-like object` to signal this is the way to do so.
 
         If :meth:`is_opus` method returns ``True``, then it must return
         20ms worth of Opus encoded audio. Otherwise, it must be 20ms
@@ -64,16 +70,13 @@ class AudioSource:
 
         Returns
         --------
-        bytes
+        :class:`bytes`
             A bytes like object that represents the PCM or Opus data.
         """
         raise NotImplementedError
 
     def is_opus(self):
-        """Checks if the audio source is already encoded in Opus.
-
-        Defaults to ``False``.
-        """
+        """Checks if the audio source is already encoded in Opus."""
         return False
 
     def cleanup(self):
@@ -92,7 +95,7 @@ class PCMAudio(AudioSource):
 
     Attributes
     -----------
-    stream: file-like object
+    stream: :term:`py:file object`
         A file-like object that reads byte data representing raw PCM.
     """
     def __init__(self, stream):
@@ -116,21 +119,21 @@ class FFmpegPCMAudio(AudioSource):
 
     Parameters
     ------------
-    source: Union[str, BinaryIO]
+    source: Union[:class:`str`, :class:`io.BufferedIOBase`]
         The input that ffmpeg will take and convert to PCM bytes.
         If ``pipe`` is True then this is a file-like object that is
         passed to the stdin of ffmpeg.
-    executable: str
+    executable: :class:`str`
         The executable name (and path) to use. Defaults to ``ffmpeg``.
-    pipe: bool
-        If true, denotes that ``source`` parameter will be passed
+    pipe: :class:`bool`
+        If ``True``, denotes that ``source`` parameter will be passed
         to the stdin of ffmpeg. Defaults to ``False``.
-    stderr: Optional[BinaryIO]
+    stderr: Optional[:term:`py:file object`]
         A file-like object to pass to the Popen constructor.
         Could also be an instance of ``subprocess.PIPE``.
-    options: Optional[str]
+    options: Optional[:class:`str`]
         Extra command line arguments to pass to ffmpeg after the ``-i`` flag.
-    before_options: Optional[str]
+    before_options: Optional[:class:`str`]
         Extra command line arguments to pass to ffmpeg before the ``-i`` flag.
 
     Raises
@@ -162,8 +165,8 @@ class FFmpegPCMAudio(AudioSource):
             self._stdout = self._process.stdout
         except FileNotFoundError:
             raise ClientException(executable + ' was not found.') from None
-        except subprocess.SubprocessError as e:
-            raise ClientException('Popen failed: {0.__class__.__name__}: {0}'.format(e)) from e
+        except subprocess.SubprocessError as exc:
+            raise ClientException('Popen failed: {0.__class__.__name__}: {0}'.format(exc)) from exc
 
     def read(self):
         ret = self._stdout.read(OpusEncoder.FRAME_SIZE)
@@ -197,7 +200,7 @@ class PCMVolumeTransformer(AudioSource):
     ------------
     original: :class:`AudioSource`
         The original AudioSource to transform.
-    volume: float
+    volume: :class:`float`
         The initial volume to set it to.
         See :attr:`volume` for more info.
 
@@ -261,6 +264,7 @@ class AudioPlayer(threading.Thread):
 
         # getattr lookup speed ups
         play_audio = self.client.send_audio_packet
+        self._speak(True)
 
         while not self._end.is_set():
             # are we paused?
@@ -292,8 +296,8 @@ class AudioPlayer(threading.Thread):
     def run(self):
         try:
             self._do_run()
-        except Exception as e:
-            self._current_error = e
+        except Exception as exc:
+            self._current_error = exc
             self.stop()
         finally:
             self.source.cleanup()
@@ -303,20 +307,25 @@ class AudioPlayer(threading.Thread):
         if self.after is not None:
             try:
                 self.after(self._current_error)
-            except:
+            except Exception:
                 log.exception('Calling the after function failed.')
 
     def stop(self):
         self._end.set()
         self._resumed.set()
+        self._speak(False)
 
-    def pause(self):
+    def pause(self, *, update_speaking=True):
         self._resumed.clear()
+        if update_speaking:
+            self._speak(False)
 
-    def resume(self):
+    def resume(self, *, update_speaking=True):
         self.loops = 0
         self._start = time.time()
         self._resumed.set()
+        if update_speaking:
+            self._speak(True)
 
     def is_playing(self):
         return self._resumed.is_set() and not self._end.is_set()
@@ -326,6 +335,12 @@ class AudioPlayer(threading.Thread):
 
     def _set_source(self, source):
         with self._lock:
-            self.pause()
+            self.pause(update_speaking=False)
             self.source = source
-            self.resume()
+            self.resume(update_speaking=False)
+
+    def _speak(self, speaking):
+        try:
+            asyncio.run_coroutine_threadsafe(self.client.ws.speak(speaking), self.client.loop)
+        except Exception as e:
+            log.info("Speaking call in player failed: %s", e)

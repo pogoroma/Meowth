@@ -3,7 +3,7 @@
 """
 The MIT License (MIT)
 
-Copyright (c) 2015-2017 Rapptz
+Copyright (c) 2015-2019 Rapptz
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the "Software"),
@@ -25,8 +25,6 @@ DEALINGS IN THE SOFTWARE.
 """
 
 from .enums import RelationshipType, try_enum
-
-import asyncio
 
 class Relationship:
     """Represents a relationship in Discord.
@@ -52,8 +50,7 @@ class Relationship:
     def __repr__(self):
         return '<Relationship user={0.user!r} type={0.type!r}>'.format(self)
 
-    @asyncio.coroutine
-    def delete(self):
+    async def delete(self):
         """|coro|
 
         Deletes the relationship.
@@ -64,10 +61,9 @@ class Relationship:
             Deleting the relationship failed.
         """
 
-        yield from self._state.http.remove_relationship(self.user.id)
+        await self._state.http.remove_relationship(self.user.id)
 
-    @asyncio.coroutine
-    def accept(self):
+    async def accept(self):
         """|coro|
 
         Accepts the relationship request. e.g. accepting a
@@ -79,4 +75,4 @@ class Relationship:
             Accepting the relationship failed.
         """
 
-        yield from self._state.http.add_relationship(self.user.id)
+        await self._state.http.add_relationship(self.user.id)

@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
+
 """
 The MIT License (MIT)
 
-Copyright (c) 2015-2017 Rapptz
+Copyright (c) 2015-2019 Rapptz
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the "Software"),
@@ -23,16 +24,22 @@ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 """
 
-import enum
+from discord.enums import Enum
 import time
 
-__all__ = ['BucketType', 'Cooldown', 'CooldownMapping']
+__all__ = (
+    'BucketType',
+    'Cooldown',
+    'CooldownMapping',
+)
 
-class BucketType(enum.Enum):
-    default = 0
-    user    = 1
-    guild  = 2
-    channel = 3
+class BucketType(Enum):
+    default  = 0
+    user     = 1
+    guild    = 2
+    channel  = 3
+    member   = 4
+    category = 5
 
 class Cooldown:
     __slots__ = ('rate', 'per', 'type', '_window', '_tokens', '_last')
@@ -58,8 +65,8 @@ class Cooldown:
             tokens = self.rate
         return tokens
 
-    def update_rate_limit(self):
-        current = time.time()
+    def update_rate_limit(self, current=None):
+        current = current or time.time()
         self._last = current
 
         self._tokens = self.get_tokens(current)
@@ -95,6 +102,11 @@ class CooldownMapping:
         self._cache = {}
         self._cooldown = original
 
+    def copy(self):
+        ret = CooldownMapping(self._cooldown)
+        ret._cache = self._cache.copy()
+        return ret
+
     @property
     def valid(self):
         return self._cooldown is not None
@@ -111,21 +123,25 @@ class CooldownMapping:
             return (msg.guild or msg.author).id
         elif bucket_type is BucketType.channel:
             return msg.channel.id
+        elif bucket_type is BucketType.member:
+            return ((msg.guild and msg.guild.id), msg.author.id)
+        elif bucket_type is BucketType.category:
+            return (msg.channel.category or msg.channel).id
 
-    def _verify_cache_integrity(self):
+    def _verify_cache_integrity(self, current=None):
         # we want to delete all cache objects that haven't been used
         # in a cooldown window. e.g. if we have a  command that has a
         # cooldown of 60s and it has not been used in 60s then that key should be deleted
-        current = time.time()
+        current = current or time.time()
         dead_keys = [k for k, v in self._cache.items() if current > v._last + v.per]
         for k in dead_keys:
             del self._cache[k]
 
-    def get_bucket(self, message):
+    def get_bucket(self, message, current=None):
         if self._cooldown.type is BucketType.default:
             return self._cooldown
 
-        self._verify_cache_integrity()
+        self._verify_cache_integrity(current)
         key = self._bucket_key(message)
         if key not in self._cache:
             bucket = self._cooldown.copy()
@@ -134,3 +150,7 @@ class CooldownMapping:
             bucket = self._cache[key]
 
         return bucket
+
+    def update_rate_limit(self, message, current=None):
+        bucket = self.get_bucket(message, current)
+        return bucket.update_rate_limit(current)
