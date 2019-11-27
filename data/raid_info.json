@@ -36,11 +36,12 @@
       "egg": "rare", 
       "egg_img": "4.png", 
       "pokemon": [
-        76, 
         105, 
         110, 
-        131, 
-        248
+        176, 
+        248, 
+        306, 
+        359
       ], 
       "hatchtime": 60, 
       "raidtime": 45
