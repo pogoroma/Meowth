@@ -25,9 +25,9 @@
       "egg_img": "3.png", 
       "pokemon": [
         26, 
-        134, 
-        137, 
-        597
+        65, 
+        68, 
+        196
       ], 
       "hatchtime": 60, 
       "raidtime": 45
@@ -49,7 +49,7 @@
       "egg": "legendary", 
       "egg_img": "5.png", 
       "pokemon": [
-        638
+        639
       ], 
       "hatchtime": 60, 
       "raidtime": 45
