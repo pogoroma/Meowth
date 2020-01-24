@@ -5,7 +5,7 @@
       "egg_img": "1.png", 
       "pokemon": [
         403, 
-        501, 
+        532, 
         599
       ], 
       "hatchtime": 60, 
@@ -15,10 +15,7 @@
       "egg": "normal", 
       "egg_img": "2.png", 
       "pokemon": [
-        20, 
-        202, 
-        303, 
-        394
+        303
       ], 
       "hatchtime": 60, 
       "raidtime": 45
@@ -29,7 +26,7 @@
       "pokemon": [
         26, 
         68, 
-        134
+        136
       ], 
       "hatchtime": 60, 
       "raidtime": 45
@@ -38,9 +35,9 @@
       "egg": "rare", 
       "egg_img": "4.png", 
       "pokemon": [
-        76, 
         105, 
         110, 
+        130, 
         248, 
         530
       ], 
